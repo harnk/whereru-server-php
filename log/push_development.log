@@ -1,0 +1,255 @@
+2014-11-30T03:50:00+00:00 Push script started (development mode)
+2014-11-30T03:50:00+00:00 Exiting with fatal error: exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php:82
+Stack trace:
+#0 /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php(82): PDO->__construct('mysql:host=loca...', 'pushchat', 'd]682\\#%yI1nb3', Array)
+#1 /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php(36): APNS_Push->__construct(Array)
+#2 {main}
+2014-11-30T04:57:03+01:00 Push script started (development mode)
+2014-11-30T04:57:03+01:00 Connecting to gateway.sandbox.push.apple.com:2195
+2014-11-30T04:57:04+01:00 Failed to connect: 0 
+2014-11-30T05:03:55+01:00 Push script started (development mode)
+2014-11-30T05:03:55+01:00 Connecting to gateway.sandbox.push.apple.com:2195
+2014-11-30T05:03:56+01:00 Failed to connect: 0 
+2014-11-30T05:08:26+01:00 Push script started (development mode)
+2014-11-30T05:08:26+01:00 Connecting to gateway.sandbox.push.apple.com:2195
+2014-11-30T05:08:26+01:00 Failed to connect: 0 
+2014-11-30T05:12:41+01:00 Push script started (development mode)
+2014-11-30T05:12:41+01:00 Connecting to gateway.sandbox.push.apple.com:2195
+2014-11-30T05:12:41+01:00 Connection OK
+2014-11-30T05:20:06+01:00 Sending message 1 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Hey","sound":"default"}}'
+2014-11-30T05:20:07+01:00 Message successfully delivered
+2014-11-30T05:21:22+01:00 Sending message 2 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: What","sound":"default"}}'
+2014-11-30T05:21:22+01:00 Message successfully delivered
+2014-11-30T05:23:32+01:00 Sending message 3 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Shaun","sound":"default"}}'
+2014-11-30T05:23:32+01:00 Message successfully delivered
+2014-11-30T05:23:57+01:00 Sending message 4 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Tug","sound":"default"}}'
+2014-11-30T05:23:57+01:00 Message successfully delivered
+2014-11-30T05:47:08+01:00 Sending message 5 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Gggggh","sound":"default"}}'
+2014-11-30T05:47:08+01:00 Message successfully delivered
+2014-11-30T05:47:23+01:00 Sending message 6 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Fggffffgg","sound":"default"}}'
+2014-11-30T05:47:23+01:00 Message successfully delivered
+2014-11-30T05:48:28+01:00 Sending message 7 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Really","sound":"default"}}'
+2014-11-30T05:48:28+01:00 Message successfully delivered
+2014-11-30T05:48:43+01:00 Sending message 8 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Ya","sound":"default"}}'
+2014-11-30T05:48:43+01:00 Message successfully delivered
+2014-11-30T05:55:03+01:00 Sending message 9 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Beep","sound":"beep.caf"}}'
+2014-11-30T05:55:03+01:00 Message successfully delivered
+2014-11-30T05:55:23+01:00 Sending message 10 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Beep","sound":"beep.caf"}}'
+2014-11-30T05:55:23+01:00 Message successfully delivered
+2014-11-30T14:56:07+01:00 Sending message 11 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Gm","sound":"beep.caf"}}'
+2014-11-30T14:56:07+01:00 Message successfully delivered
+2014-11-30T14:59:04+01:00 Push script started (development mode)
+2014-11-30T14:59:04+01:00 Connecting to gateway.sandbox.push.apple.com:2195
+2014-11-30T14:59:04+01:00 Connection OK
+2014-11-30T14:59:24+01:00 Sending message 12 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Higher rut","sound":"beep.caf"}}'
+2014-11-30T14:59:24+01:00 Message successfully delivered
+2014-11-30T15:01:19+01:00 Sending message 13 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Ya","sound":"beep.caf"}}'
+2014-11-30T15:01:19+01:00 Message successfully delivered
+2014-12-01T03:41:42+01:00 Sending message 14 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Gabba","sound":"beep.caf"}}'
+2014-12-01T03:41:42+01:00 Message successfully delivered
+2014-12-01T03:43:02+01:00 Sending message 15 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Wha","sound":"beep.caf"}}'
+2014-12-01T03:43:02+01:00 Message not delivered
+2014-12-01T03:43:02+01:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2014-12-01T03:43:03+01:00 Connection OK
+2014-12-01T03:43:08+01:00 Sending message 15 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Wha","sound":"beep.caf"}}'
+2014-12-01T03:43:08+01:00 Message successfully delivered
+2014-12-01T03:48:43+01:00 Sending message 16 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Come on man","sound":"beep.caf"}}'
+2014-12-01T03:48:43+01:00 Message successfully delivered
+2014-12-01T03:54:34+01:00 Sending message 17 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Dude","sound":"beep.caf"}}'
+2014-12-01T03:54:34+01:00 Message successfully delivered
+2014-12-01T03:54:54+01:00 Sending message 18 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: What dude","sound":"beep.caf"}}'
+2014-12-01T03:54:54+01:00 Message successfully delivered
+2014-12-01T03:55:14+01:00 Sending message 19 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: U there","sound":"beep.caf"}}'
+2014-12-01T03:55:14+01:00 Message successfully delivered
+2014-12-01T03:55:29+01:00 Sending message 20 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Ya","sound":"beep.caf"}}'
+2014-12-01T03:55:29+01:00 Message successfully delivered
+2014-12-01T04:07:54+01:00 Sending message 21 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Question everything","sound":"beep.caf"}}'
+2014-12-01T04:07:54+01:00 Message successfully delivered
+2014-12-01T15:48:24+01:00 Sending message 22 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: Wake up!!!!","sound":"beep.caf"}}'
+2014-12-01T15:48:24+01:00 Message successfully delivered
+2014-12-01T15:48:24+01:00 Sending message 23 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"buggy smells: Wake up!!!!","sound":"beep.caf"}}'
+2014-12-01T15:48:24+01:00 Message successfully delivered
+2014-12-01T20:34:25+01:00 Push script started (development mode)
+2014-12-01T20:34:25+01:00 Connecting to gateway.sandbox.push.apple.com:2195
+2014-12-01T20:34:26+01:00 Connection OK
+2014-12-01T20:36:36+01:00 Sending message 24 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Hey everybody how you doing","sound":"beep.caf"}}'
+2014-12-01T20:36:36+01:00 Message successfully delivered
+2014-12-01T20:36:36+01:00 Sending message 25 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Harnk: Hey everybody how you doing","sound":"beep.caf"}}'
+2014-12-01T20:36:36+01:00 Message successfully delivered
+2014-12-01T20:36:56+01:00 Sending message 26 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Doing great","sound":"beep.caf"}}'
+2014-12-01T20:36:56+01:00 Message successfully delivered
+2014-12-01T20:36:56+01:00 Sending message 27 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Doing great","sound":"beep.caf"}}'
+2014-12-01T20:36:56+01:00 Message successfully delivered
+2014-12-01T20:37:46+01:00 Sending message 28 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: Wake up nowhere","sound":"beep.caf"}}'
+2014-12-01T20:37:46+01:00 Message successfully delivered
+2014-12-01T20:37:46+01:00 Sending message 29 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"buggy smells: Wake up nowhere","sound":"beep.caf"}}'
+2014-12-01T20:37:46+01:00 Message successfully delivered
+2014-12-01T22:08:17+01:00 Sending message 30 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Wake the heck up","sound":"beep.caf"}}'
+2014-12-01T22:08:17+01:00 Message successfully delivered
+2014-12-01T22:08:17+01:00 Sending message 31 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Wake the heck up","sound":"beep.caf"}}'
+2014-12-01T22:08:17+01:00 Message successfully delivered
+2014-12-01T22:56:03+01:00 Sending message 32 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: The fact","sound":"beep.caf"}}'
+2014-12-01T22:56:03+01:00 Message successfully delivered
+2014-12-01T22:56:04+01:00 Sending message 33 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"buggy smells: The fact","sound":"beep.caf"}}'
+2014-12-01T22:56:04+01:00 Message successfully delivered
+2014-12-01T22:57:29+01:00 Sending message 34 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Goog","sound":"beep.caf"}}'
+2014-12-01T22:57:29+01:00 Message successfully delivered
+2014-12-01T22:57:29+01:00 Sending message 35 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Harnk: Goog","sound":"beep.caf"}}'
+2014-12-01T22:57:29+01:00 Message successfully delivered
+2014-12-01T22:57:54+01:00 Sending message 36 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: The fact that you have","sound":"beep.caf"}}'
+2014-12-01T22:57:54+01:00 Message successfully delivered
+2014-12-01T22:57:54+01:00 Sending message 37 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"buggy smells: The fact that you have","sound":"beep.caf"}}'
+2014-12-01T22:57:54+01:00 Message successfully delivered
+2014-12-01T23:07:04+01:00 Sending message 38 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-01T23:07:04+01:00 Message successfully delivered
+2014-12-01T23:07:04+01:00 Sending message 39 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Harnk: latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-01T23:07:04+01:00 Message successfully delivered
+2014-12-01T23:08:29+01:00 Sending message 40 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-01T23:08:29+01:00 Message successfully delivered
+2014-12-01T23:08:29+01:00 Sending message 41 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"buggy smells: latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-01T23:08:29+01:00 Message successfully delivered
+2014-12-01T23:12:15+01:00 Sending message 42 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: latitude: 41.739413 longitude: -86.098968","sound":"beep.caf"}}'
+2014-12-01T23:12:15+01:00 Message successfully delivered
+2014-12-01T23:12:15+01:00 Sending message 43 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: latitude: 41.739413 longitude: -86.098968","sound":"beep.caf"}}'
+2014-12-01T23:12:15+01:00 Message successfully delivered
+2014-12-02T00:50:16+01:00 Sending message 44 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-02T00:50:16+01:00 Message successfully delivered
+2014-12-02T00:50:16+01:00 Sending message 45 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Harnk: latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-02T00:50:16+01:00 Message successfully delivered
+2014-12-02T00:51:16+01:00 Sending message 46 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-02T00:51:16+01:00 Message successfully delivered
+2014-12-02T00:51:16+01:00 Sending message 47 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Harnk: latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-02T00:51:16+01:00 Message successfully delivered
+2014-12-02T00:51:51+01:00 Sending message 48 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: latitude: 41.739378 longitude: -86.098951","sound":"beep.caf"}}'
+2014-12-02T00:51:51+01:00 Message successfully delivered
+2014-12-02T00:51:51+01:00 Sending message 49 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: latitude: 41.739378 longitude: -86.098951","sound":"beep.caf"}}'
+2014-12-02T00:51:51+01:00 Message successfully delivered
+2014-12-02T01:03:02+01:00 Sending message 50 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: latitude: 41.739521 longitude: -86.098993","sound":"beep.caf"}}'
+2014-12-02T01:03:02+01:00 Message successfully delivered
+2014-12-02T01:03:02+01:00 Sending message 51 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: latitude: 41.739521 longitude: -86.098993","sound":"beep.caf"}}'
+2014-12-02T01:03:02+01:00 Message successfully delivered
+2014-12-02T01:04:57+01:00 Sending message 52 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: latitude: 41.739534 longitude: -86.099002","sound":"beep.caf"}}'
+2014-12-02T01:04:57+01:00 Message successfully delivered
+2014-12-02T01:04:57+01:00 Sending message 53 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: latitude: 41.739534 longitude: -86.099002","sound":"beep.caf"}}'
+2014-12-02T01:04:57+01:00 Message successfully delivered
+2014-12-02T02:39:38+01:00 Sending message 54 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Ghg","loc":"latitude: 41.739450 longitude: -86.098926",sound":"beep.caf"}}'
+2014-12-02T02:39:38+01:00 Message successfully delivered
+2014-12-02T02:39:38+01:00 Sending message 55 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Ghg","loc":"latitude: 41.739450 longitude: -86.098926",sound":"beep.caf"}}'
+2014-12-02T02:39:38+01:00 Message successfully delivered
+2014-12-02T02:41:13+01:00 Sending message 56 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Tgggg","loc":"latitude: 0.000000 longitude: 0.000000",sound":"beep.caf"}}'
+2014-12-02T02:41:13+01:00 Message successfully delivered
+2014-12-02T02:41:13+01:00 Sending message 57 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Harnk: Tgggg","loc":"latitude: 0.000000 longitude: 0.000000",sound":"beep.caf"}}'
+2014-12-02T02:41:13+01:00 Message successfully delivered
+2014-12-02T02:42:44+01:00 Push script started (development mode)
+2014-12-02T02:42:44+01:00 Connecting to gateway.sandbox.push.apple.com:2195
+2014-12-02T02:42:45+01:00 Connection OK
+2014-12-02T02:42:45+01:00 Sending message 58 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Thy","loc":"latitude: 0.000000 longitude: 0.000000",sound":"beep.caf"}}'
+2014-12-02T02:42:45+01:00 Message successfully delivered
+2014-12-02T02:42:45+01:00 Sending message 59 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Harnk: Thy","loc":"latitude: 0.000000 longitude: 0.000000",sound":"beep.caf"}}'
+2014-12-02T02:42:45+01:00 Message successfully delivered
+2014-12-02T02:42:45+01:00 Sending message 60 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Ggggiiirrrrrlllll","loc":"latitude: 41.739536 longitude: -86.099005",sound":"beep.caf"}}'
+2014-12-02T02:42:45+01:00 Message successfully delivered
+2014-12-02T02:42:45+01:00 Sending message 61 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Ggggiiirrrrrlllll","loc":"latitude: 41.739536 longitude: -86.099005",sound":"beep.caf"}}'
+2014-12-02T02:42:45+01:00 Message successfully delivered
+2014-12-02T02:44:35+01:00 Sending message 62 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Bob","loc":"latitude: 0.000000 longitude: 0.000000",sound":"beep.caf"}}'
+2014-12-02T02:44:35+01:00 Message successfully delivered
+2014-12-02T02:44:35+01:00 Sending message 63 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Harnk: Bob","loc":"latitude: 0.000000 longitude: 0.000000",sound":"beep.caf"}}'
+2014-12-02T02:44:35+01:00 Message successfully delivered
+2014-12-02T02:46:35+01:00 Sending message 64 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Vvv",sound":"beep.caf"}}'
+2014-12-02T02:46:35+01:00 Message successfully delivered
+2014-12-02T02:46:35+01:00 Sending message 65 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Harnk: Vvv",sound":"beep.caf"}}'
+2014-12-02T02:46:35+01:00 Message successfully delivered
+2014-12-02T02:47:50+01:00 Sending message 66 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: Po",sound":"beep.caf"}}'
+2014-12-02T02:47:50+01:00 Message successfully delivered
+2014-12-02T02:47:50+01:00 Sending message 67 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"buggy smells: Po",sound":"beep.caf"}}'
+2014-12-02T02:47:50+01:00 Message successfully delivered
+2014-12-02T02:50:50+01:00 Sending message 68 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Tuffu",sound":"beep.caf"}}'
+2014-12-02T02:50:50+01:00 Message successfully delivered
+2014-12-02T02:50:50+01:00 Sending message 69 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Tuffu",sound":"beep.caf"}}'
+2014-12-02T02:50:50+01:00 Message successfully delivered
+2014-12-02T02:53:51+01:00 Sending message 70 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Edits here",sound":"beep.caf"}}'
+2014-12-02T02:53:51+01:00 Message successfully delivered
+2014-12-02T02:53:51+01:00 Sending message 71 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Edits here",sound":"beep.caf"}}'
+2014-12-02T02:53:51+01:00 Message successfully delivered
+2014-12-02T02:54:56+01:00 Sending message 72 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"Harnk: Better?","sound":"beep.caf"}}'
+2014-12-02T02:54:56+01:00 Message successfully delivered
+2014-12-02T02:54:56+01:00 Sending message 73 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Harnk: Better?","sound":"beep.caf"}}'
+2014-12-02T02:54:56+01:00 Message successfully delivered
+2014-12-02T02:55:21+01:00 Sending message 74 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Yap","sound":"beep.caf"}}'
+2014-12-02T02:55:21+01:00 Message successfully delivered
+2014-12-02T02:55:21+01:00 Sending message 75 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Yap","sound":"beep.caf"}}'
+2014-12-02T02:55:21+01:00 Message successfully delivered
+2014-12-02T02:56:56+01:00 Sending message 76 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Here goes nuthin","loc":"latitude: 41.739588 longitude: -86.098946","sound":"beep.caf"}}'
+2014-12-02T02:56:56+01:00 Message successfully delivered
+2014-12-02T02:56:56+01:00 Sending message 77 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Here goes nuthin","loc":"latitude: 41.739588 longitude: -86.098946","sound":"beep.caf"}}'
+2014-12-02T02:56:56+01:00 Message successfully delivered
+2014-12-02T03:07:06+01:00 Sending message 78 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: From ole ed","loc":"latitude: 41.739358 longitude: -86.098907","sound":"beep.caf"}}'
+2014-12-02T03:07:06+01:00 Message successfully delivered
+2014-12-02T03:07:06+01:00 Sending message 79 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: From ole ed","loc":"latitude: 41.739358 longitude: -86.098907","sound":"beep.caf"}}'
+2014-12-02T03:07:06+01:00 Message successfully delivered
+2014-12-02T03:07:31+01:00 Sending message 80 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Yet agin","loc":"latitude: 41.739519 longitude: -86.098965","sound":"beep.caf"}}'
+2014-12-02T03:07:31+01:00 Message successfully delivered
+2014-12-02T03:07:31+01:00 Sending message 81 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Yet agin","loc":"latitude: 41.739519 longitude: -86.098965","sound":"beep.caf"}}'
+2014-12-02T03:07:31+01:00 Message successfully delivered
+2014-12-02T03:28:27+01:00 Sending message 82 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Shady","loc":"latitude: 41.739549 longitude: -86.098982","sound":"beep.caf"}}'
+2014-12-02T03:28:27+01:00 Message successfully delivered
+2014-12-02T03:28:27+01:00 Sending message 83 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Shady","loc":"latitude: 41.739549 longitude: -86.098982","sound":"beep.caf"}}'
+2014-12-02T03:28:27+01:00 Message successfully delivered
+2014-12-02T03:40:48+01:00 Sending message 84 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Hggg","loc":"latitude: 41.739508 longitude: -86.099016","sound":"beep.caf"}}'
+2014-12-02T03:40:48+01:00 Message successfully delivered
+2014-12-02T03:40:48+01:00 Sending message 85 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Hggg","loc":"latitude: 41.739508 longitude: -86.099016","sound":"beep.caf"}}'
+2014-12-02T03:40:48+01:00 Message successfully delivered
+2014-12-06T03:04:09+01:00 Exiting with fatal error: exception 'PDOException' with message 'SQLSTATE[08S01]: Communication link failure: 1053 Server shutdown in progress' in /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php:110
+Stack trace:
+#0 /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php(110): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php(37): APNS_Push->start()
+#2 {main}
+2014-12-13T16:20:39+00:00 Push script started (development mode)
+2014-12-13T16:20:39+00:00 Exiting with fatal error: exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php:82
+Stack trace:
+#0 /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php(82): PDO->__construct('mysql:host=loca...', 'pushchat', 'd]682\\#%yI1nb3', Array)
+#1 /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php(36): APNS_Push->__construct(Array)
+#2 {main}
+2014-12-13T22:23:56+01:00 Push script started (development mode)
+2014-12-13T22:23:57+01:00 Connecting to gateway.sandbox.push.apple.com:2195
+2014-12-13T22:23:57+01:00 Connection OK
+2014-12-13T22:23:57+01:00 Sending message 86 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Ghg","loc":"latitude: 41.739400 longitude: -86.098870","sound":"beep.caf"}}'
+2014-12-13T22:23:57+01:00 Message successfully delivered
+2014-12-13T22:23:57+01:00 Sending message 87 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Ghg","loc":"latitude: 41.739400 longitude: -86.098870","sound":"beep.caf"}}'
+2014-12-13T22:23:57+01:00 Message successfully delivered
+2014-12-13T22:23:57+01:00 Sending message 88 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: Hey Ed","loc":"latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-13T22:23:57+01:00 Message successfully delivered
+2014-12-13T22:23:57+01:00 Sending message 89 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"buggy smells: Hey Ed","loc":"latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-13T22:23:57+01:00 Message successfully delivered
+2014-12-13T22:23:57+01:00 Sending message 90 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Ok. Then","loc":"latitude: 41.739435 longitude: -86.098874","sound":"beep.caf"}}'
+2014-12-13T22:23:57+01:00 Message successfully delivered
+2014-12-13T22:23:57+01:00 Sending message 91 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"Ed: Ok. Then","loc":"latitude: 41.739435 longitude: -86.098874","sound":"beep.caf"}}'
+2014-12-13T22:23:57+01:00 Message successfully delivered
+2014-12-13T22:23:57+01:00 Sending message 92 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: Hey","loc":"latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-13T22:23:57+01:00 Message successfully delivered
+2014-12-13T22:23:57+01:00 Sending message 93 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"alert":"buggy smells: Hey","loc":"latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-13T22:23:57+01:00 Message successfully delivered
+2014-12-13T22:23:57+01:00 Sending message 94 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Yo","loc":"latitude: 41.739524 longitude: -86.099000","sound":"beep.caf"}}'
+2014-12-13T22:23:57+01:00 Message successfully delivered
+2014-12-13T22:23:57+01:00 Sending message 95 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: Yo yo","loc":"latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-13T22:23:57+01:00 Message successfully delivered
+2014-12-13T22:24:37+01:00 Sending message 96 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Sup","loc":"latitude: 41.739516 longitude: -86.099014","sound":"beep.caf"}}'
+2014-12-13T22:24:37+01:00 Message successfully delivered
+2014-12-13T22:25:02+01:00 Sending message 97 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: The fact I can get it right away with the best of the year and the rest of the day","loc":"latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-13T22:25:02+01:00 Message successfully delivered
+2014-12-13T22:26:27+01:00 Sending message 98 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Hi","loc":"latitude: 41.739570 longitude: -86.098990","sound":"beep.caf"}}'
+2014-12-13T22:26:28+01:00 Message successfully delivered
+2014-12-13T22:26:43+01:00 Sending message 99 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: I'm so excited","loc":"latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-13T22:26:43+01:00 Message successfully delivered
+2014-12-13T22:27:03+01:00 Sending message 100 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: Hey Ed","loc":"latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-13T22:27:03+01:00 Message successfully delivered
+2014-12-13T22:27:38+01:00 Sending message 101 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"alert":"Ed: Joetookfathersshoebenchout","loc":"latitude: 41.739476 longitude: -86.099017","sound":"beep.caf"}}'
+2014-12-13T22:27:38+01:00 Message successfully delivered
+2014-12-13T22:27:53+01:00 Sending message 102 to '5005df6ff5597fb3abd6ee717439f786235285e63f6c078a4ccb99d67567651b', payload: '{"aps":{"alert":"buggy smells: Hehe","loc":"latitude: 0.000000 longitude: 0.000000","sound":"beep.caf"}}'
+2014-12-13T22:27:53+01:00 Message successfully delivered
+2014-12-22T04:47:03+00:00 Push script started (development mode)
+2014-12-22T04:47:03+00:00 Exiting with fatal error: exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php:84
+Stack trace:
+#0 /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php(84): PDO->__construct('mysql:host=loca...', 'altcoinf_pushwr...', 'd]682\\#%yI1nb3', Array)
+#1 /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php(38): APNS_Push->__construct(Array)
+#2 {main}
