@@ -253,3 +253,65 @@ Stack trace:
 #0 /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php(84): PDO->__construct('mysql:host=loca...', 'altcoinf_pushwr...', 'd]682\\#%yI1nb3', Array)
 #1 /Applications/MAMP/htdocs/WhereRU-server-php/push/push.php(38): APNS_Push->__construct(Array)
 #2 {main}
+2014-12-26T20:07:13-07:00 Sending message 530 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"simulator: hey from simboy","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:07:13-07:00 Message successfully delivered
+2014-12-26T20:07:13-07:00 Sending message 531 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"simulator: hey from simboy","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:07:13-07:00 Message successfully delivered
+2014-12-26T20:07:13-07:00 Sending message 532 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"simulator: hey from simboy","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:07:13-07:00 Message successfully delivered
+2014-12-26T20:07:13-07:00 Sending message 533 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"simulator: hey from simboy","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:07:13-07:00 Message successfully delivered
+2014-12-26T20:07:13-07:00 Sending message 534 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"simulator: hey from simboy","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:07:13-07:00 Message successfully delivered
+2014-12-26T20:09:18-07:00 Sending message 535 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"buggy smells: Ffffffffff","loc":"41.739149, -86.099597","sound":"beep.caf"}}'
+2014-12-26T20:09:18-07:00 Message successfully delivered
+2014-12-26T20:09:18-07:00 Sending message 536 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"buggy smells: Ffffffffff","loc":"41.739149, -86.099597","sound":"beep.caf"}}'
+2014-12-26T20:09:18-07:00 Message successfully delivered
+2014-12-26T20:09:18-07:00 Sending message 537 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"buggy smells: Ffffffffff","loc":"41.739149, -86.099597","sound":"beep.caf"}}'
+2014-12-26T20:09:18-07:00 Message successfully delivered
+2014-12-26T20:09:18-07:00 Sending message 538 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"buggy smells: Ffffffffff","loc":"41.739149, -86.099597","sound":"beep.caf"}}'
+2014-12-26T20:09:18-07:00 Message successfully delivered
+2014-12-26T20:10:13-07:00 Sending message 539 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"buggy smells: Fluffy","loc":"41.739575, -86.099014","sound":"beep.caf"}}'
+2014-12-26T20:10:13-07:00 Message successfully delivered
+2014-12-26T20:10:13-07:00 Sending message 540 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"buggy smells: Fluffy","loc":"41.739575, -86.099014","sound":"beep.caf"}}'
+2014-12-26T20:10:13-07:00 Message successfully delivered
+2014-12-26T20:10:13-07:00 Sending message 541 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"buggy smells: Fluffy","loc":"41.739575, -86.099014","sound":"beep.caf"}}'
+2014-12-26T20:10:13-07:00 Message successfully delivered
+2014-12-26T20:10:13-07:00 Sending message 542 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"buggy smells: Fluffy","loc":"41.739575, -86.099014","sound":"beep.caf"}}'
+2014-12-26T20:10:13-07:00 Message successfully delivered
+2014-12-26T20:16:13-07:00 Sending message 543 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"simulator: ftretretretre","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:16:13-07:00 Message successfully delivered
+2014-12-26T20:16:13-07:00 Sending message 544 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"simulator: ftretretretre","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:16:13-07:00 Message successfully delivered
+2014-12-26T20:16:13-07:00 Sending message 545 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"simulator: ftretretretre","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:16:13-07:00 Message successfully delivered
+2014-12-26T20:16:13-07:00 Sending message 546 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"simulator: ftretretretre","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:16:13-07:00 Message successfully delivered
+2014-12-26T20:16:13-07:00 Sending message 547 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"simulator: ftretretretre","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:16:13-07:00 Message successfully delivered
+2014-12-26T20:16:23-07:00 Sending message 548 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"buggy smells: High","loc":"41.739448, -86.099226","sound":"beep.caf"}}'
+2014-12-26T20:16:23-07:00 Message successfully delivered
+2014-12-26T20:16:23-07:00 Sending message 549 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"buggy smells: High","loc":"41.739448, -86.099226","sound":"beep.caf"}}'
+2014-12-26T20:16:23-07:00 Message successfully delivered
+2014-12-26T20:16:23-07:00 Sending message 550 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"buggy smells: High","loc":"41.739448, -86.099226","sound":"beep.caf"}}'
+2014-12-26T20:16:23-07:00 Message successfully delivered
+2014-12-26T20:16:23-07:00 Sending message 551 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"buggy smells: High","loc":"41.739448, -86.099226","sound":"beep.caf"}}'
+2014-12-26T20:16:23-07:00 Message successfully delivered
+2014-12-26T20:25:18-07:00 Sending message 552 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"steve: GgGgg","loc":"41.739581, -86.098993","sound":"beep.caf"}}'
+2014-12-26T20:25:18-07:00 Message successfully delivered
+2014-12-26T20:25:18-07:00 Sending message 553 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"steve: GgGgg","loc":"41.739581, -86.098993","sound":"beep.caf"}}'
+2014-12-26T20:25:18-07:00 Message successfully delivered
+2014-12-26T20:25:19-07:00 Sending message 554 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"steve: GgGgg","loc":"41.739581, -86.098993","sound":"beep.caf"}}'
+2014-12-26T20:25:19-07:00 Message successfully delivered
+2014-12-26T20:25:19-07:00 Sending message 555 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"steve: GgGgg","loc":"41.739581, -86.098993","sound":"beep.caf"}}'
+2014-12-26T20:25:19-07:00 Message successfully delivered
+2014-12-26T20:35:54-07:00 Sending message 556 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"simulator: hj","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:35:54-07:00 Message successfully delivered
+2014-12-26T20:35:54-07:00 Sending message 557 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"simulator: hj","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:35:54-07:00 Message successfully delivered
+2014-12-26T20:35:54-07:00 Sending message 558 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"simulator: hj","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:35:54-07:00 Message successfully delivered
+2014-12-26T20:35:54-07:00 Sending message 559 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"simulator: hj","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:35:54-07:00 Message successfully delivered
+2014-12-26T20:35:54-07:00 Sending message 560 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"simulator: hj","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
+2014-12-26T20:35:54-07:00 Message successfully delivered
