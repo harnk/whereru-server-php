@@ -234,7 +234,8 @@ class API
 		{
 			// Put the sender's name and the message text into the JSON payload
 			// for the push notification.
-			$payload = $this->makeFindPayload($user->nickname, $text, $location);
+			// $payload = $this->makeFindPayload($user->nickname, $text, $location);
+			$payload = $this->makeFindPayload($userId, $text, $location);
 
 			// Find the device tokens for all other users who are registered
 			// for this secret code. We exclude the device token of the sender
@@ -252,20 +253,53 @@ class API
 		}
 	}
 
-	// The "imhere" API command is a user telling us where they are
+	// The "imhere" API command is a user telling the asker where he is
 	//
 	// This command takes the following POST parameters:
 	//
 	// - user_Id:  A unique identifier. Must be a string of 40 hexadecimal characters.
-	// - token: The device's device token. Must be a string of 64 hexadecimal
-	//          characters, or "0" if no token is available yet.
+	// - asker: The user_Id of the one who wants to know and will get the push
 	// - location: longitute and latitude coordinates.
 	//
 	function handleImhere()
 	{
 		$userId = $this->getUserId();
-		// $stmt = $this->pdo->prepare('DELETE FROM active_users WHERE user_Id = ?');
-		// $stmt->execute(array($userId));
+		$askerId = $this->getAskerId();
+		$text = $this->getString('text', self::MAX_MESSAGE_LENGTH, true);
+		$location = $this->getString('location', self::MAX_MESSAGE_LENGTH, true);
+
+		// First, we get the record for the sender of the message from the
+		// active_users table. That gives us the nickname, device token, and
+		// secret code for that user.
+
+		$stmt = $this->pdo->prepare('SELECT * FROM active_users WHERE user_Id = ? LIMIT 1');
+		$stmt->execute(array($userId));
+		$user = $stmt->fetch(PDO::FETCH_OBJ);
+
+		if ($user !== false)
+		{
+			// Put the sender's name and the message text into the JSON payload
+			// for the push notification.
+
+			// $payload = $this->makeImherePayload($user->nickname, $text, $location);
+			$payload = $this->makePayload($user->nickname, $text, $location);
+
+			// Find the device tokens for all other users who are registered
+			// for this secret code. We exclude the device token of the sender
+			// of the message, so he will not get a push notification. We also
+			// exclude users who have not submitted a valid device token yet.
+			$stmt = $this->pdo->prepare("SELECT device_token FROM active_users WHERE user_id = ?");
+
+			$stmt->execute(array($askerId));
+
+			$tokens = $stmt->fetchAll(PDO::FETCH_COLUMN);
+
+			// Send out a push notification to each of these devices.
+			foreach ($tokens as $token)
+			{
+				$this->addPushNotification($token, $payload);
+			}
+		}
 	}
 
 	// The "leave" API command removes a user from a chat room. That user will
@@ -356,6 +390,20 @@ class API
 		return $userId;
 	}
 
+	// Retrieves the asker's user identifier from the POST data. If the user_id does not
+	// appear to be valid, the script exits with an error message.
+	function getAskerId()
+	{
+		if (!isset($_POST['asker']))
+			exitWithHttpError(400, 'Missing asker');
+
+		$userId = trim(urldecode($_POST['asker']));
+		if (!$this->isValidUserId($userId))
+			exitWithHttpError(400, 'Invalid asker');
+
+		return $userId;
+	}
+
 	// Checks whether the format of the user identifier is correct (40 hex
 	// characters or 32 for the simulator).
 	function isValidUserId($userId)
@@ -425,12 +473,36 @@ class API
 	// text has the following format: "sender_name: message_text". Recipients
 	// can obtain the name of the sender by parsing the alert text up to the
 	// first colon followed by a space.
+	function makeImherePayload($senderName, $text, $location)
+	{
+
+		// Convert the nickname of the sender to JSON and truncate to a maximum
+		// length of 20 bytes (which may be less than 20 characters).
+		$nameJson = $this->jsonEncode($senderName);
+		$nameJson = truncateUtf8($nameJson, 32);
+
+		// Convert and truncate the message text
+		$textJson = $this->jsonEncode($text);
+		$textJson = truncateUtf8($textJson, self::MAX_MESSAGE_LENGTH);
+
+		// Convert and truncate the location data
+		$locJson = $this->jsonEncode($location);
+		$locJson = truncateUtf8($locJson, self::MAX_MESSAGE_LENGTH);
+
+		// Combine everything into a JSON string
+		return $payload;
+	}
+
+	// Creates the JSON payload for the push notification message. The "alert"
+	// text has the following format: "sender_name: message_text". Recipients
+	// can obtain the name of the sender by parsing the alert text up to the
+	// first colon followed by a space.
 	function makeFindPayload($senderName, $text, $location)
 	{
 		// Convert the nickname of the sender to JSON and truncate to a maximum
 		// length of 20 bytes (which may be less than 20 characters).
 		$nameJson = $this->jsonEncode($senderName);
-		$nameJson = truncateUtf8($nameJson, 20);
+		$nameJson = truncateUtf8($nameJson, 32);
 
 		// Convert and truncate the message text
 		$textJson = $this->jsonEncode($text);
@@ -446,7 +518,7 @@ class API
 
 		// $payload = '{"aps":{"content-available":1,"loc":"' . $locJson . '","sound":"beep.caf"}}';
 
-		$payload = '{"aps":{"content-available":1,"extra":"find: whereru","loc":"' . $locJson . '","sound":"sweetbeep.caf"}}';
+		$payload = '{"aps":{"content-available":1,"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '","sound":"sweetbeep.caf"}}';
 		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
 		return $payload;
 	}
