@@ -133,7 +133,7 @@ class API
 			'mysql:host=' . $config['db']['host'] . ';dbname=' . $config['db']['dbname'], 
 			$config['db']['username'], 
 			$config['db']['password'],
-			array());
+			array(PDO::ATTR_PERSISTENT => false));
 
 		// If there is an error executing database queries, we want PDO to
 		// throw an exception. Our exception handler will then exit the script
@@ -547,7 +547,7 @@ class API
 		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","sound":"beep.caf"}}';
 
 		// $payload = '{"aps":{"content-available":1,"loc":"' . $locJson . '","sound":"beep.caf"}}';
-		$payload = '{"aps":{"content-available":1,"extra":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","sound":"beep.caf"}}';
+		$payload = '{"aps":{"content-available":1,"extra":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"beep.caf"}}';
 		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
 		return $payload;
 	}
