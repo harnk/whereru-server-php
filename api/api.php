@@ -281,8 +281,8 @@ class API
 			// Put the sender's name and the message text into the JSON payload
 			// for the push notification.
 
-			// $payload = $this->makeImherePayload($user->nickname, $text, $location);
-			$payload = $this->makePayload($user->nickname, $text, $location);
+			$payload = $this->makeImherePayload($user->nickname, $text, $location);
+			//$payload = $this->makePayload($user->nickname, $text, $location);
 
 			// Find the device tokens for all other users who are registered
 			// for this secret code. We exclude the device token of the sender
@@ -473,13 +473,12 @@ class API
 	// text has the following format: "sender_name: message_text". Recipients
 	// can obtain the name of the sender by parsing the alert text up to the
 	// first colon followed by a space.
-	function makeImherePayload($senderName, $text, $location)
+	function makePayload($senderName, $text, $location)
 	{
-
 		// Convert the nickname of the sender to JSON and truncate to a maximum
 		// length of 20 bytes (which may be less than 20 characters).
 		$nameJson = $this->jsonEncode($senderName);
-		$nameJson = truncateUtf8($nameJson, 32);
+		$nameJson = truncateUtf8($nameJson, 20);
 
 		// Convert and truncate the message text
 		$textJson = $this->jsonEncode($text);
@@ -490,6 +489,43 @@ class API
 		$locJson = truncateUtf8($locJson, self::MAX_MESSAGE_LENGTH);
 
 		// Combine everything into a JSON string
+		//
+		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","sound":"beep.caf"}}';
+
+		// $payload = '{"aps":{"content-available":1,"loc":"' . $locJson . '","sound":"beep.caf"}}';
+		$payload = '{"aps":{"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"beep.caf"}}';
+		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
+		return $payload;
+	}
+
+	// Creates the JSON payload for the push notification message. The "alert"
+	// text has the following format: "sender_name: message_text". Recipients
+	// can obtain the name of the sender by parsing the alert text up to the
+	// first colon followed by a space.
+	function makeImherePayload($senderName, $text, $location)
+	{
+		// Convert the nickname of the sender to JSON and truncate to a maximum
+		// length of 20 bytes (which may be less than 20 characters).
+		$nameJson = $this->jsonEncode($senderName);
+		$nameJson = truncateUtf8($nameJson, 20);
+
+		// Convert and truncate the message text
+		$textJson = $this->jsonEncode($text);
+		$textJson = truncateUtf8($textJson, self::MAX_MESSAGE_LENGTH);
+
+		// Convert and truncate the location data
+		$locJson = $this->jsonEncode($location);
+		$locJson = truncateUtf8($locJson, self::MAX_MESSAGE_LENGTH);
+
+		// Combine everything into a JSON string
+		//
+		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","sound":"beep.caf"}}';
+
+		// $payload = '{"aps":{"content-available":1,"loc":"' . $locJson . '","sound":"beep.caf"}}';
+		// I don't think this needs content-available becausethe receiving asker doesn't need to respond in the background with anything
+//		$payload = '{"aps":{"content-available":1,"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"sweetbeep.caf"}}';
+		$payload = '{"aps":{"content-available":1,"badge":1,"loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"sweetbeep.caf"}}';
+		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
 		return $payload;
 	}
 
@@ -518,36 +554,12 @@ class API
 
 		// $payload = '{"aps":{"content-available":1,"loc":"' . $locJson . '","sound":"beep.caf"}}';
 
+
+		//TRY TAKING IT OUT COMPLETELY AND SEE IF BKGND STILL RELAYS THE PING
+//		$payload = '{"aps":{"content-available":1,"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '","sound":"sweetbeep.caf"}}';
 		$payload = '{"aps":{"content-available":1,"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '","sound":"sweetbeep.caf"}}';
-		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
-		return $payload;
-	}
 
-	// Creates the JSON payload for the push notification message. The "alert"
-	// text has the following format: "sender_name: message_text". Recipients
-	// can obtain the name of the sender by parsing the alert text up to the
-	// first colon followed by a space.
-	function makePayload($senderName, $text, $location)
-	{
-		// Convert the nickname of the sender to JSON and truncate to a maximum
-		// length of 20 bytes (which may be less than 20 characters).
-		$nameJson = $this->jsonEncode($senderName);
-		$nameJson = truncateUtf8($nameJson, 20);
 
-		// Convert and truncate the message text
-		$textJson = $this->jsonEncode($text);
-		$textJson = truncateUtf8($textJson, self::MAX_MESSAGE_LENGTH);
-
-		// Convert and truncate the location data
-		$locJson = $this->jsonEncode($location);
-		$locJson = truncateUtf8($locJson, self::MAX_MESSAGE_LENGTH);
-
-		// Combine everything into a JSON string
-		//
-		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","sound":"beep.caf"}}';
-
-		// $payload = '{"aps":{"content-available":1,"loc":"' . $locJson . '","sound":"beep.caf"}}';
-		$payload = '{"aps":{"content-available":1,"extra":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"beep.caf"}}';
 		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
 		return $payload;
 	}

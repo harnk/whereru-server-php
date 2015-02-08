@@ -27,7 +27,7 @@ $config = array(
 		'db' => array(
 			'host'     => 'localhost',
 			'dbname'   => 'altcoinf_pushwhereru',
-			'username' => 'altcoinf_pushwru',
+			'username' => 'altcoinf_pushw',
 			'password' => 'd]682\#%yI1nb3',
 			),
 
