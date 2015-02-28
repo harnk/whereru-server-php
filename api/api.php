@@ -37,7 +37,7 @@ try
 	// You're probably running this on a fast local server but in production
 	// mode people will be using it on a mobile device over a slow connection.
 	if (APPLICATION_ENV == 'development')
-		sleep(2);
+		// sleep(2);
 
 	// To keep the code clean, I put the API into its own class. Create an
 	// instance of that class and let it handle the request.
@@ -249,6 +249,8 @@ class API
 			foreach ($tokens as $token)
 			{
 				$this->addPushNotification($token, $payload);
+				//Maybe put a slight delay between each send so receiver has time to deal with them??
+				// sleep(1);
 			}
 		}
 	}
@@ -281,8 +283,8 @@ class API
 			// Put the sender's name and the message text into the JSON payload
 			// for the push notification.
 
-			$payload = $this->makeImherePayload($user->nickname, $text, $location);
-			//$payload = $this->makePayload($user->nickname, $text, $location);
+			// $payload = $this->makeImherePayload($user->nickname, $text, $location);
+			$payload = $this->makePayload($user->nickname, $text, $location);
 
 			// Find the device tokens for all other users who are registered
 			// for this secret code. We exclude the device token of the sender
@@ -519,12 +521,8 @@ class API
 
 		// Combine everything into a JSON string
 		//
-		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","sound":"beep.caf"}}';
-
-		// $payload = '{"aps":{"content-available":1,"loc":"' . $locJson . '","sound":"beep.caf"}}';
-		// I don't think this needs content-available becausethe receiving asker doesn't need to respond in the background with anything
-//		$payload = '{"aps":{"content-available":1,"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"sweetbeep.caf"}}';
-		$payload = '{"aps":{"content-available":1,"badge":1,"loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"sweetbeep.caf"}}';
+		$payload = '{"aps":{"content-available":1,"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"sweetbeep.caf"}}';
+		// $payload = '{"aps":{"content-available":1,"badge":1,"loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"sweetbeep.caf"}}';
 		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
 		return $payload;
 	}
@@ -582,6 +580,7 @@ class API
 	{
 		// Payloads have a maximum size of 256 bytes. If the payload is too
 		// large (which shouldn't happen), we won't send this notification.
+		// iOS8 has increased payload size to 2KB
 		if (strlen($payload) <= 256)
 		{
 			$stmt = $this->pdo->prepare('INSERT INTO push_queue (device_token, payload, time_queued) VALUES (?, ?, NOW())');

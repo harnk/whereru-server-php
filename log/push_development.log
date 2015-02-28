@@ -315,3 +315,890 @@ Stack trace:
 2014-12-26T20:35:54-07:00 Message successfully delivered
 2014-12-26T20:35:54-07:00 Sending message 560 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"simulator: hj","loc":"37.332331, -122.031219","sound":"beep.caf"}}'
 2014-12-26T20:35:54-07:00 Message successfully delivered
+2015-02-08T18:53:39-07:00 Sending message 26750 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"Dadoo: Hi","loc":"41.739826, -86.099161","who":"Dadoo","sound":"beep.caf"}}'
+2015-02-08T18:53:39-07:00 Message not delivered
+2015-02-08T18:53:39-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-08T18:53:39-07:00 Connection OK
+2015-02-08T18:53:44-07:00 Sending message 26750 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"Dadoo: Hi","loc":"41.739826, -86.099161","who":"Dadoo","sound":"beep.caf"}}'
+2015-02-08T18:53:44-07:00 Message successfully delivered
+2015-02-08T18:54:19-07:00 Sending message 26751 to '74abde712ae276010e7db969abc77d32cdd66824eed6338fc9c5fa3fbac71114', payload: '{"aps":{"badge":1,"alert":"yellofone: Nothing is better","loc":"41.739479, -86.099012","who":"yellofone","sound":"beep.caf"}}'
+2015-02-08T18:54:19-07:00 Message successfully delivered
+2015-02-09T05:25:30-07:00 Sending message 26752 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T05:25:30-07:00 Message not delivered
+2015-02-09T05:25:30-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-09T05:25:30-07:00 Connection OK
+2015-02-09T05:25:30-07:00 Sending message 26753 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T05:25:30-07:00 Message successfully delivered
+2015-02-09T05:25:30-07:00 Sending message 26754 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T05:25:30-07:00 Message successfully delivered
+2015-02-09T05:25:30-07:00 Sending message 26755 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T05:25:30-07:00 Message successfully delivered
+2015-02-09T05:25:30-07:00 Sending message 26756 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T05:25:30-07:00 Message successfully delivered
+2015-02-09T05:25:35-07:00 Sending message 26752 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T05:25:35-07:00 Message successfully delivered
+2015-02-09T05:25:40-07:00 Sending message 26757 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.684622, -86.083059","who":"GramaNull","sound":"sweetbeep.caf"}}'
+2015-02-09T05:25:40-07:00 Message successfully delivered
+2015-02-09T05:27:55-07:00 Sending message 26758 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Good Morning all.   Have a good day.  Mom","loc":"41.940185, -86.257798","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-09T05:27:55-07:00 Message successfully delivered
+2015-02-09T05:27:55-07:00 Sending message 26759 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Good Morning all.   Have a good day.  Mom","loc":"41.940185, -86.257798","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-09T05:27:55-07:00 Message successfully delivered
+2015-02-09T05:27:55-07:00 Sending message 26760 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Good Morning all.   Have a good day.  Mom","loc":"41.940185, -86.257798","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-09T05:27:55-07:00 Message successfully delivered
+2015-02-09T05:27:55-07:00 Sending message 26761 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Good Morning all.   Have a good day.  Mom","loc":"41.940185, -86.257798","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-09T05:27:55-07:00 Message successfully delivered
+2015-02-09T05:27:55-07:00 Sending message 26762 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Good Morning all.   Have a good day.  Mom","loc":"41.940185, -86.257798","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-09T05:27:55-07:00 Message successfully delivered
+2015-02-09T05:27:55-07:00 Sending message 26763 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T05:27:55-07:00 Message successfully delivered
+2015-02-09T05:27:55-07:00 Sending message 26764 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T05:27:55-07:00 Message successfully delivered
+2015-02-09T05:27:55-07:00 Sending message 26765 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T05:27:55-07:00 Message successfully delivered
+2015-02-09T05:27:55-07:00 Sending message 26766 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T05:27:55-07:00 Message successfully delivered
+2015-02-09T05:27:55-07:00 Sending message 26767 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T05:27:55-07:00 Message successfully delivered
+2015-02-09T05:28:00-07:00 Sending message 26768 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.684621, -86.082853","who":"GramaNull","sound":"sweetbeep.caf"}}'
+2015-02-09T05:28:00-07:00 Message successfully delivered
+2015-02-09T05:46:40-07:00 Sending message 26769 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739573, -86.099028","who":"Patty","sound":"sweetbeep.caf"}}'
+2015-02-09T05:46:40-07:00 Message successfully delivered
+2015-02-09T05:54:16-07:00 Sending message 26770 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739541, -86.098958","who":"Dad4s","sound":"sweetbeep.caf"}}'
+2015-02-09T05:54:16-07:00 Message successfully delivered
+2015-02-09T06:34:01-07:00 Sending message 26771 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"647191B332314C0AA2A2E70712066D54","loc":"41.739633, -86.099066","sound":"sweetbeep.caf"}}'
+2015-02-09T06:34:01-07:00 Message successfully delivered
+2015-02-09T06:34:01-07:00 Sending message 26772 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"647191B332314C0AA2A2E70712066D54","loc":"41.739633, -86.099066","sound":"sweetbeep.caf"}}'
+2015-02-09T06:34:01-07:00 Message successfully delivered
+2015-02-09T06:34:01-07:00 Sending message 26773 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"647191B332314C0AA2A2E70712066D54","loc":"41.739633, -86.099066","sound":"sweetbeep.caf"}}'
+2015-02-09T06:34:01-07:00 Message successfully delivered
+2015-02-09T06:34:01-07:00 Sending message 26774 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"647191B332314C0AA2A2E70712066D54","loc":"41.739633, -86.099066","sound":"sweetbeep.caf"}}'
+2015-02-09T06:34:01-07:00 Message successfully delivered
+2015-02-09T06:34:01-07:00 Sending message 26775 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"647191B332314C0AA2A2E70712066D54","loc":"41.739633, -86.099066","sound":"sweetbeep.caf"}}'
+2015-02-09T06:34:01-07:00 Message successfully delivered
+2015-02-09T06:34:01-07:00 Sending message 26776 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"647191B332314C0AA2A2E70712066D54","loc":"41.739633, -86.099066","sound":"sweetbeep.caf"}}'
+2015-02-09T06:34:01-07:00 Message successfully delivered
+2015-02-09T06:34:06-07:00 Sending message 26777 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739445, -86.099071","who":"Jack-iPad3","sound":"sweetbeep.caf"}}'
+2015-02-09T06:34:06-07:00 Message successfully delivered
+2015-02-09T06:34:06-07:00 Sending message 26778 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.684477, -86.083083","who":"GramaNull","sound":"sweetbeep.caf"}}'
+2015-02-09T06:34:06-07:00 Message successfully delivered
+2015-02-09T06:58:17-07:00 Sending message 26779 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739573, -86.099028","who":"Patty","sound":"sweetbeep.caf"}}'
+2015-02-09T06:58:17-07:00 Message not delivered
+2015-02-09T06:58:17-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-09T06:58:17-07:00 Connection OK
+2015-02-09T06:58:22-07:00 Sending message 26779 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739573, -86.099028","who":"Patty","sound":"sweetbeep.caf"}}'
+2015-02-09T06:58:22-07:00 Message successfully delivered
+2015-02-09T08:08:15-07:00 Sending message 26780 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739866, -86.099260","sound":"sweetbeep.caf"}}'
+2015-02-09T08:08:15-07:00 Message successfully delivered
+2015-02-09T08:08:15-07:00 Sending message 26781 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739866, -86.099260","sound":"sweetbeep.caf"}}'
+2015-02-09T08:08:15-07:00 Message successfully delivered
+2015-02-09T17:30:26-07:00 Sending message 26782 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T17:30:26-07:00 Message not delivered
+2015-02-09T17:30:26-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-09T17:30:27-07:00 Connection OK
+2015-02-09T17:30:27-07:00 Sending message 26783 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T17:30:27-07:00 Message successfully delivered
+2015-02-09T17:30:27-07:00 Sending message 26784 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T17:30:27-07:00 Message successfully delivered
+2015-02-09T17:30:27-07:00 Sending message 26785 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T17:30:27-07:00 Message successfully delivered
+2015-02-09T17:30:27-07:00 Sending message 26786 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T17:30:27-07:00 Message successfully delivered
+2015-02-09T17:30:27-07:00 Sending message 26787 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T17:30:27-07:00 Message successfully delivered
+2015-02-09T17:30:32-07:00 Sending message 26782 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T17:30:32-07:00 Message not delivered
+2015-02-09T17:30:32-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-09T17:30:32-07:00 Connection OK
+2015-02-09T17:30:37-07:00 Sending message 26782 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T17:30:37-07:00 Message successfully delivered
+2015-02-09T17:32:27-07:00 Sending message 26788 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739445, -86.099071","who":"Jack-iPad3","sound":"sweetbeep.caf"}}'
+2015-02-09T17:32:27-07:00 Message successfully delivered
+2015-02-09T17:40:07-07:00 Sending message 26789 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739573, -86.099028","who":"Patty","sound":"sweetbeep.caf"}}'
+2015-02-09T17:40:07-07:00 Message successfully delivered
+2015-02-09T18:05:23-07:00 Sending message 26790 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739529, -86.099046","sound":"sweetbeep.caf"}}'
+2015-02-09T18:05:23-07:00 Message successfully delivered
+2015-02-09T18:05:23-07:00 Sending message 26791 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739529, -86.099046","sound":"sweetbeep.caf"}}'
+2015-02-09T18:05:23-07:00 Message successfully delivered
+2015-02-09T18:05:23-07:00 Sending message 26792 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739529, -86.099046","sound":"sweetbeep.caf"}}'
+2015-02-09T18:05:23-07:00 Message successfully delivered
+2015-02-09T18:05:23-07:00 Sending message 26793 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739529, -86.099046","sound":"sweetbeep.caf"}}'
+2015-02-09T18:05:23-07:00 Message successfully delivered
+2015-02-09T18:05:23-07:00 Sending message 26794 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739529, -86.099046","sound":"sweetbeep.caf"}}'
+2015-02-09T18:05:23-07:00 Message successfully delivered
+2015-02-09T18:05:23-07:00 Sending message 26795 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739529, -86.099046","sound":"sweetbeep.caf"}}'
+2015-02-09T18:05:23-07:00 Message successfully delivered
+2015-02-09T18:05:28-07:00 Sending message 26796 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739445, -86.099071","who":"Jack-iPad3","sound":"sweetbeep.caf"}}'
+2015-02-09T18:05:28-07:00 Message not delivered
+2015-02-09T18:05:28-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-09T18:05:28-07:00 Connection OK
+2015-02-09T18:05:28-07:00 Sending message 26797 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.684331, -86.082968","who":"GramaNull","sound":"sweetbeep.caf"}}'
+2015-02-09T18:05:28-07:00 Message successfully delivered
+2015-02-09T18:05:33-07:00 Sending message 26796 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739445, -86.099071","who":"Jack-iPad3","sound":"sweetbeep.caf"}}'
+2015-02-09T18:05:33-07:00 Message successfully delivered
+2015-02-09T18:58:35-07:00 Sending message 26798 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T18:58:35-07:00 Message successfully delivered
+2015-02-09T18:58:35-07:00 Sending message 26799 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T18:58:35-07:00 Message successfully delivered
+2015-02-09T18:58:35-07:00 Sending message 26800 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T18:58:35-07:00 Message successfully delivered
+2015-02-09T18:58:35-07:00 Sending message 26801 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T18:58:35-07:00 Message successfully delivered
+2015-02-09T18:58:35-07:00 Sending message 26802 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T18:58:35-07:00 Message successfully delivered
+2015-02-09T18:58:35-07:00 Sending message 26803 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-09T18:58:35-07:00 Message successfully delivered
+2015-02-09T18:58:40-07:00 Sending message 26804 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739573, -86.099028","who":"Patty","sound":"sweetbeep.caf"}}'
+2015-02-09T18:58:40-07:00 Message not delivered
+2015-02-09T18:58:40-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-09T18:58:40-07:00 Connection OK
+2015-02-09T18:58:40-07:00 Sending message 26805 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.684349, -86.082920","who":"GramaNull","sound":"sweetbeep.caf"}}'
+2015-02-09T18:58:40-07:00 Message successfully delivered
+2015-02-09T18:58:45-07:00 Sending message 26804 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739573, -86.099028","who":"Patty","sound":"sweetbeep.caf"}}'
+2015-02-09T18:58:45-07:00 Message successfully delivered
+2015-02-09T19:02:55-07:00 Sending message 26806 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739445, -86.099071","who":"Jack-iPad3","sound":"sweetbeep.caf"}}'
+2015-02-09T19:02:55-07:00 Message successfully delivered
+2015-02-09T21:09:52-07:00 Sending message 26807 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739746, -86.099132","sound":"sweetbeep.caf"}}'
+2015-02-09T21:09:52-07:00 Message successfully delivered
+2015-02-09T21:09:52-07:00 Sending message 26808 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739746, -86.099132","sound":"sweetbeep.caf"}}'
+2015-02-09T21:09:52-07:00 Message successfully delivered
+2015-02-10T06:00:56-07:00 Sending message 26809 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"381CA86D2E3A4F18B2E6A63CF0C52EDF","loc":"41.739250, -86.098982","sound":"sweetbeep.caf"}}'
+2015-02-10T06:00:56-07:00 Message not delivered
+2015-02-10T06:00:56-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-10T06:00:56-07:00 Connection OK
+2015-02-10T06:00:56-07:00 Sending message 26810 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"381CA86D2E3A4F18B2E6A63CF0C52EDF","loc":"41.739250, -86.098982","sound":"sweetbeep.caf"}}'
+2015-02-10T06:00:56-07:00 Message successfully delivered
+2015-02-10T06:01:01-07:00 Sending message 26809 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"381CA86D2E3A4F18B2E6A63CF0C52EDF","loc":"41.739250, -86.098982","sound":"sweetbeep.caf"}}'
+2015-02-10T06:01:01-07:00 Message successfully delivered
+2015-02-10T06:01:01-07:00 Sending message 26811 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.740002, -86.099594","who":"Steve iPad","sound":"sweetbeep.caf"}}'
+2015-02-10T06:01:01-07:00 Message successfully delivered
+2015-02-10T06:01:06-07:00 Sending message 26812 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739440, -86.098981","who":"ED","sound":"sweetbeep.caf"}}'
+2015-02-10T06:01:06-07:00 Message successfully delivered
+2015-02-10T07:47:09-07:00 Sending message 26813 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.740002, -86.099594","sound":"sweetbeep.caf"}}'
+2015-02-10T07:47:10-07:00 Message successfully delivered
+2015-02-10T07:47:10-07:00 Sending message 26814 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.740002, -86.099594","sound":"sweetbeep.caf"}}'
+2015-02-10T07:47:10-07:00 Message successfully delivered
+2015-02-10T07:47:15-07:00 Sending message 26815 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739386, -86.098765","who":"ED-iPad","sound":"sweetbeep.caf"}}'
+2015-02-10T07:47:15-07:00 Message successfully delivered
+2015-02-10T07:47:15-07:00 Sending message 26816 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739440, -86.098981","who":"ED","sound":"sweetbeep.caf"}}'
+2015-02-10T07:47:15-07:00 Message successfully delivered
+2015-02-10T18:34:45-07:00 Sending message 26817 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739272, -86.098876","sound":"sweetbeep.caf"}}'
+2015-02-10T18:34:45-07:00 Message successfully delivered
+2015-02-10T18:34:45-07:00 Sending message 26818 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739272, -86.098876","sound":"sweetbeep.caf"}}'
+2015-02-10T18:34:45-07:00 Message successfully delivered
+2015-02-11T06:00:58-07:00 Sending message 26819 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"381CA86D2E3A4F18B2E6A63CF0C52EDF","loc":"41.739628, -86.098890","sound":"sweetbeep.caf"}}'
+2015-02-11T06:00:58-07:00 Message not delivered
+2015-02-11T06:00:58-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-11T06:00:59-07:00 Connection OK
+2015-02-11T06:00:59-07:00 Sending message 26820 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"381CA86D2E3A4F18B2E6A63CF0C52EDF","loc":"41.739628, -86.098890","sound":"sweetbeep.caf"}}'
+2015-02-11T06:00:59-07:00 Message successfully delivered
+2015-02-11T06:01:04-07:00 Sending message 26819 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"381CA86D2E3A4F18B2E6A63CF0C52EDF","loc":"41.739628, -86.098890","sound":"sweetbeep.caf"}}'
+2015-02-11T06:01:04-07:00 Message successfully delivered
+2015-02-11T06:01:04-07:00 Sending message 26821 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739312, -86.098738","who":"Steve iPad","sound":"sweetbeep.caf"}}'
+2015-02-11T06:01:04-07:00 Message successfully delivered
+2015-02-11T06:15:54-07:00 Sending message 26822 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739440, -86.098981","who":"ED","sound":"sweetbeep.caf"}}'
+2015-02-11T06:15:54-07:00 Message successfully delivered
+2015-02-11T08:15:38-07:00 Sending message 26823 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739312, -86.098738","sound":"sweetbeep.caf"}}'
+2015-02-11T08:15:38-07:00 Message successfully delivered
+2015-02-11T08:15:38-07:00 Sending message 26824 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739312, -86.098738","sound":"sweetbeep.caf"}}'
+2015-02-11T08:15:38-07:00 Message successfully delivered
+2015-02-11T08:15:43-07:00 Sending message 26825 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739531, -86.098825","who":"ED-iPad","sound":"sweetbeep.caf"}}'
+2015-02-11T08:15:43-07:00 Message successfully delivered
+2015-02-11T08:30:28-07:00 Sending message 26826 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739440, -86.098981","who":"ED","sound":"sweetbeep.caf"}}'
+2015-02-11T08:30:28-07:00 Message successfully delivered
+2015-02-11T18:56:35-07:00 Sending message 26827 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"381CA86D2E3A4F18B2E6A63CF0C52EDF","loc":"41.739512, -86.098878","sound":"sweetbeep.caf"}}'
+2015-02-11T18:56:35-07:00 Message successfully delivered
+2015-02-11T18:56:35-07:00 Sending message 26828 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"381CA86D2E3A4F18B2E6A63CF0C52EDF","loc":"41.739512, -86.098878","sound":"sweetbeep.caf"}}'
+2015-02-11T18:56:35-07:00 Message successfully delivered
+2015-02-11T19:39:51-07:00 Sending message 26829 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739682, -86.099102","sound":"sweetbeep.caf"}}'
+2015-02-11T19:39:51-07:00 Message not delivered
+2015-02-11T19:39:51-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-11T19:39:52-07:00 Connection OK
+2015-02-11T19:39:52-07:00 Sending message 26830 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739682, -86.099102","sound":"sweetbeep.caf"}}'
+2015-02-11T19:39:52-07:00 Message successfully delivered
+2015-02-11T19:39:57-07:00 Sending message 26829 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739682, -86.099102","sound":"sweetbeep.caf"}}'
+2015-02-11T19:39:57-07:00 Message successfully delivered
+2015-02-11T19:40:02-07:00 Sending message 26831 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739093, -86.098837","who":"ED-iPad","sound":"sweetbeep.caf"}}'
+2015-02-11T19:40:02-07:00 Message successfully delivered
+2015-02-11T19:54:42-07:00 Sending message 26832 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739440, -86.098981","who":"ED","sound":"sweetbeep.caf"}}'
+2015-02-11T19:54:42-07:00 Message successfully delivered
+2015-02-11T20:02:37-07:00 Sending message 26833 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739583, -86.098953","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:37-07:00 Message successfully delivered
+2015-02-11T20:02:37-07:00 Sending message 26834 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739583, -86.098953","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:37-07:00 Message successfully delivered
+2015-02-11T20:02:37-07:00 Sending message 26835 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739583, -86.098953","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:37-07:00 Message successfully delivered
+2015-02-11T20:02:37-07:00 Sending message 26836 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739583, -86.098953","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:37-07:00 Message successfully delivered
+2015-02-11T20:02:37-07:00 Sending message 26837 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739583, -86.098953","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:37-07:00 Message successfully delivered
+2015-02-11T20:02:37-07:00 Sending message 26838 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739583, -86.098953","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:37-07:00 Message successfully delivered
+2015-02-11T20:02:42-07:00 Sending message 26839 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739583, -86.098953","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:42-07:00 Message successfully delivered
+2015-02-11T20:02:42-07:00 Sending message 26840 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739583, -86.098953","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:42-07:00 Message successfully delivered
+2015-02-11T20:02:42-07:00 Sending message 26841 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739583, -86.098953","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:42-07:00 Message successfully delivered
+2015-02-11T20:02:42-07:00 Sending message 26842 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739583, -86.098953","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:42-07:00 Message successfully delivered
+2015-02-11T20:02:42-07:00 Sending message 26843 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739583, -86.098953","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:42-07:00 Message successfully delivered
+2015-02-11T20:02:42-07:00 Sending message 26844 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739583, -86.098953","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:42-07:00 Message successfully delivered
+2015-02-11T20:02:42-07:00 Sending message 26845 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.684463, -86.083027","who":"GramaNull","sound":"sweetbeep.caf"}}'
+2015-02-11T20:02:42-07:00 Message successfully delivered
+2015-02-11T20:03:52-07:00 Sending message 26846 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Dad4s: The fact","loc":"41.739583, -86.098953","who":"Dad4s","sound":"beep.caf"}}'
+2015-02-11T20:03:52-07:00 Message not delivered
+2015-02-11T20:03:52-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-11T20:03:52-07:00 Connection OK
+2015-02-11T20:03:57-07:00 Sending message 26846 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Dad4s: The fact","loc":"41.739583, -86.098953","who":"Dad4s","sound":"beep.caf"}}'
+2015-02-11T20:03:57-07:00 Message successfully delivered
+2015-02-11T20:04:17-07:00 Sending message 26847 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Dadoo: Got it","loc":"41.739473, -86.098972","who":"Dadoo","sound":"beep.caf"}}'
+2015-02-11T20:04:17-07:00 Message successfully delivered
+2015-02-11T20:16:43-07:00 Sending message 26848 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739573, -86.099028","who":"Patty","sound":"sweetbeep.caf"}}'
+2015-02-11T20:16:43-07:00 Message successfully delivered
+2015-02-11T20:26:03-07:00 Sending message 26849 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"E15B41489F6245E6B299CAE760199700","loc":"41.739481, -86.098988","sound":"sweetbeep.caf"}}'
+2015-02-11T20:26:03-07:00 Message successfully delivered
+2015-02-11T20:26:08-07:00 Sending message 26850 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739583, -86.098953","who":"Dad4s","sound":"sweetbeep.caf"}}'
+2015-02-11T20:26:08-07:00 Message successfully delivered
+2015-02-11T20:32:03-07:00 Sending message 26851 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"E15B41489F6245E6B299CAE760199700","loc":"41.739416, -86.099032","sound":"sweetbeep.caf"}}'
+2015-02-11T20:32:03-07:00 Message successfully delivered
+2015-02-11T20:32:08-07:00 Sending message 26852 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739583, -86.098953","who":"Dad4s","sound":"sweetbeep.caf"}}'
+2015-02-11T20:32:08-07:00 Message successfully delivered
+2015-02-11T20:36:23-07:00 Sending message 26853 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739538, -86.098963","sound":"sweetbeep.caf"}}'
+2015-02-11T20:36:23-07:00 Message successfully delivered
+2015-02-11T20:36:28-07:00 Sending message 26854 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739589, -86.098951","who":"Dadoo","sound":"sweetbeep.caf"}}'
+2015-02-11T20:36:28-07:00 Message successfully delivered
+2015-02-11T20:37:48-07:00 Sending message 26855 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739465, -86.099017","sound":"sweetbeep.caf"}}'
+2015-02-11T20:37:48-07:00 Message successfully delivered
+2015-02-11T20:37:53-07:00 Sending message 26856 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739589, -86.098951","who":"Dadoo","sound":"sweetbeep.caf"}}'
+2015-02-11T20:37:53-07:00 Message successfully delivered
+2015-02-11T20:38:13-07:00 Sending message 26857 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739467, -86.098995","sound":"sweetbeep.caf"}}'
+2015-02-11T20:38:13-07:00 Message successfully delivered
+2015-02-11T20:38:18-07:00 Sending message 26858 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739589, -86.098951","who":"Dadoo","sound":"sweetbeep.caf"}}'
+2015-02-11T20:38:18-07:00 Message successfully delivered
+2015-02-11T20:40:24-07:00 Sending message 26859 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739470, -86.099000","sound":"sweetbeep.caf"}}'
+2015-02-11T20:40:24-07:00 Message successfully delivered
+2015-02-11T20:40:29-07:00 Sending message 26860 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739589, -86.098951","who":"Dadoo","sound":"sweetbeep.caf"}}'
+2015-02-11T20:40:29-07:00 Message successfully delivered
+2015-02-11T20:40:54-07:00 Sending message 26861 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739484, -86.098992","sound":"sweetbeep.caf"}}'
+2015-02-11T20:40:54-07:00 Message successfully delivered
+2015-02-11T20:40:59-07:00 Sending message 26862 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739589, -86.098951","who":"Dadoo","sound":"sweetbeep.caf"}}'
+2015-02-11T20:40:59-07:00 Message successfully delivered
+2015-02-11T20:47:09-07:00 Sending message 26863 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739497, -86.098992","sound":"sweetbeep.caf"}}'
+2015-02-11T20:47:09-07:00 Message successfully delivered
+2015-02-11T20:47:14-07:00 Sending message 26864 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739589, -86.098951","who":"Dadoo","sound":"sweetbeep.caf"}}'
+2015-02-11T20:47:14-07:00 Message successfully delivered
+2015-02-11T20:52:29-07:00 Sending message 26865 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"E15B41489F6245E6B299CAE760199700","loc":"41.739481, -86.098992","sound":"sweetbeep.caf"}}'
+2015-02-11T20:52:29-07:00 Message successfully delivered
+2015-02-11T20:52:34-07:00 Sending message 26866 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739490, -86.098996","who":"Dad4s","sound":"sweetbeep.caf"}}'
+2015-02-11T20:52:34-07:00 Message successfully delivered
+2015-02-12T03:28:32-07:00 Sending message 26867 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-12T03:28:32-07:00 Message successfully delivered
+2015-02-12T03:28:32-07:00 Sending message 26868 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-12T03:28:32-07:00 Message successfully delivered
+2015-02-12T03:28:32-07:00 Sending message 26869 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-12T03:28:32-07:00 Message successfully delivered
+2015-02-12T03:28:32-07:00 Sending message 26870 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-12T03:28:32-07:00 Message successfully delivered
+2015-02-12T03:28:32-07:00 Sending message 26871 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-12T03:28:32-07:00 Message successfully delivered
+2015-02-12T07:45:06-07:00 Sending message 26872 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739691, -86.098950","sound":"sweetbeep.caf"}}'
+2015-02-12T07:45:06-07:00 Message not delivered
+2015-02-12T07:45:06-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-12T07:45:06-07:00 Connection OK
+2015-02-12T07:45:06-07:00 Sending message 26873 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739691, -86.098950","sound":"sweetbeep.caf"}}'
+2015-02-12T07:45:06-07:00 Message successfully delivered
+2015-02-12T07:45:11-07:00 Sending message 26872 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739691, -86.098950","sound":"sweetbeep.caf"}}'
+2015-02-12T07:45:11-07:00 Message successfully delivered
+2015-02-12T07:45:11-07:00 Sending message 26874 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739440, -86.098981","who":"ED","sound":"sweetbeep.caf"}}'
+2015-02-12T07:45:11-07:00 Message successfully delivered
+2015-02-12T07:45:16-07:00 Sending message 26875 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739426, -86.099057","who":"ED-iPad","sound":"sweetbeep.caf"}}'
+2015-02-12T07:45:16-07:00 Message successfully delivered
+2015-02-12T15:24:37-07:00 Sending message 26876 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739423, -86.098880","sound":"sweetbeep.caf"}}'
+2015-02-12T15:24:37-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Push script started (development mode)
+2015-02-13T19:50:56-07:00 Connecting to gateway.sandbox.push.apple.com:2195
+2015-02-13T19:50:56-07:00 Connection OK
+2015-02-13T19:50:56-07:00 Sending message 26877 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739618, -86.098984","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26878 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739618, -86.098984","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26879 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26880 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26881 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26882 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26883 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26884 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"381CA86D2E3A4F18B2E6A63CF0C52EDF","loc":"41.739246, -86.098926","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26885 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"381CA86D2E3A4F18B2E6A63CF0C52EDF","loc":"41.739246, -86.098926","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26886 to 'c5718c05087d759542df185b3f841e206454d6aa7f0430b1b1d666f516717a05', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739225, -86.098849","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26887 to 'c5aace02ec84be8db363ded76712ca421079e6feaf61c9ed22bc47d856c4f9dc', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"DDC165CC44284F328C503C2A997685E5","loc":"41.739225, -86.098849","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26888 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26889 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26890 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26891 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26892 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26893 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Hi I Happy Valentines Day to all.   Gma","loc":"41.922356, -86.189279","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26894 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Hi I Happy Valentines Day to all.   Gma","loc":"41.922356, -86.189279","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26895 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Hi I Happy Valentines Day to all.   Gma","loc":"41.922356, -86.189279","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:50:56-07:00 Sending message 26896 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Hi I Happy Valentines Day to all.   Gma","loc":"41.922356, -86.189279","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-13T19:50:56-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26897 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Hi I Happy Valentines Day to all.   Gma","loc":"41.922356, -86.189279","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-13T19:51:01-07:00 Message not delivered
+2015-02-13T19:51:01-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T19:51:01-07:00 Connection OK
+2015-02-13T19:51:01-07:00 Sending message 26898 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26899 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26900 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26901 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26902 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4D4DB1DC006043C989DE00612860E166","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26903 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"647191B332314C0AA2A2E70712066D54","loc":"41.754602, -86.135519","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26904 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"647191B332314C0AA2A2E70712066D54","loc":"41.754602, -86.135519","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26905 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"647191B332314C0AA2A2E70712066D54","loc":"41.754602, -86.135519","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26906 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"647191B332314C0AA2A2E70712066D54","loc":"41.754602, -86.135519","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26907 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"647191B332314C0AA2A2E70712066D54","loc":"41.754602, -86.135519","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26908 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"badge":1,"alert":"Dad: Hello","loc":"0.000000, 0.000000","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26909 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"badge":1,"alert":"Dad: Hello","loc":"0.000000, 0.000000","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26910 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"badge":1,"alert":"Dad: Hello","loc":"0.000000, 0.000000","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26911 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Dad: Hello","loc":"0.000000, 0.000000","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26912 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"badge":1,"alert":"Dad: Hello","loc":"0.000000, 0.000000","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26913 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"Dad: Hello","loc":"0.000000, 0.000000","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26914 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26915 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:01-07:00 Sending message 26916 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:01-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26897 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Hi I Happy Valentines Day to all.   Gma","loc":"41.922356, -86.189279","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-13T19:51:06-07:00 Message not delivered
+2015-02-13T19:51:06-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T19:51:06-07:00 Connection OK
+2015-02-13T19:51:06-07:00 Sending message 26917 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26918 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26919 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26920 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"badge":1,"alert":"Dad: Anyone there","loc":"0.000000, 0.000000","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26921 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"badge":1,"alert":"Dad: Anyone there","loc":"0.000000, 0.000000","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26922 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"badge":1,"alert":"Dad: Anyone there","loc":"0.000000, 0.000000","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26923 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Dad: Anyone there","loc":"0.000000, 0.000000","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26924 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"badge":1,"alert":"Dad: Anyone there","loc":"0.000000, 0.000000","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26925 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"Dad: Anyone there","loc":"0.000000, 0.000000","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26926 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26927 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26928 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26929 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26930 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26931 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26932 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26933 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26934 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:06-07:00 Sending message 26935 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:06-07:00 Message successfully delivered
+2015-02-13T19:51:11-07:00 Sending message 26897 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Hi I Happy Valentines Day to all.   Gma","loc":"41.922356, -86.189279","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-13T19:51:11-07:00 Message not delivered
+2015-02-13T19:51:11-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T19:51:12-07:00 Connection OK
+2015-02-13T19:51:12-07:00 Sending message 26936 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26937 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26938 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26939 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26940 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26941 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26942 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26943 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26944 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26945 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26946 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26947 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26948 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26949 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26950 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26951 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26952 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26953 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:12-07:00 Sending message 26954 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:12-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26897 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Hi I Happy Valentines Day to all.   Gma","loc":"41.922356, -86.189279","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-13T19:51:17-07:00 Message not delivered
+2015-02-13T19:51:17-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T19:51:17-07:00 Connection OK
+2015-02-13T19:51:17-07:00 Sending message 26955 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26956 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26957 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26958 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26959 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26960 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26961 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26962 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26963 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26964 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26965 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26966 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26967 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"F6B3DF69A17242E88C44EB4F1A81DFC8","loc":"0.000000, 0.000000","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26968 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739247, -86.098734","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26969 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739247, -86.098734","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26970 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739247, -86.098734","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26971 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739247, -86.098734","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26972 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739247, -86.098734","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:17-07:00 Sending message 26973 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739247, -86.098734","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T19:51:17-07:00 Message successfully delivered
+2015-02-13T19:51:22-07:00 Sending message 26897 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Hi I Happy Valentines Day to all.   Gma","loc":"41.922356, -86.189279","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-13T19:51:22-07:00 Message not delivered
+2015-02-13T19:51:22-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T19:51:22-07:00 Connection OK
+2015-02-13T19:51:22-07:00 Sending message 26974 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739247, -86.098734","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T19:51:22-07:00 Message successfully delivered
+2015-02-13T19:51:22-07:00 Sending message 26975 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:22-07:00 Message successfully delivered
+2015-02-13T19:51:22-07:00 Sending message 26976 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:22-07:00 Message successfully delivered
+2015-02-13T19:51:22-07:00 Sending message 26977 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:22-07:00 Message successfully delivered
+2015-02-13T19:51:22-07:00 Sending message 26978 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:22-07:00 Message successfully delivered
+2015-02-13T19:51:22-07:00 Sending message 26979 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:22-07:00 Message successfully delivered
+2015-02-13T19:51:22-07:00 Sending message 26980 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:22-07:00 Message successfully delivered
+2015-02-13T19:51:22-07:00 Sending message 26981 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:22-07:00 Message successfully delivered
+2015-02-13T19:51:22-07:00 Sending message 26982 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.684404, -86.082982","who":"GramaNull","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:22-07:00 Message successfully delivered
+2015-02-13T19:51:22-07:00 Sending message 26983 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.684799, -86.083499","who":"GramaNull","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:22-07:00 Message successfully delivered
+2015-02-13T19:51:27-07:00 Sending message 26897 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Hi I Happy Valentines Day to all.   Gma","loc":"41.922356, -86.189279","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-13T19:51:27-07:00 Message not delivered
+2015-02-13T19:51:27-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T19:51:27-07:00 Connection OK
+2015-02-13T19:51:27-07:00 Sending message 26984 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739513, -86.098988","who":"Dad","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:27-07:00 Message successfully delivered
+2015-02-13T19:51:27-07:00 Sending message 26985 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739513, -86.098988","who":"Dad","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:27-07:00 Message successfully delivered
+2015-02-13T19:51:27-07:00 Sending message 26986 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.684805, -86.083414","who":"GramaNull","sound":"sweetbeep.caf"}}'
+2015-02-13T19:51:27-07:00 Message successfully delivered
+2015-02-13T19:51:32-07:00 Sending message 26897 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"GramaSimko: Hi I Happy Valentines Day to all.   Gma","loc":"41.922356, -86.189279","who":"GramaSimko","sound":"beep.caf"}}'
+2015-02-13T19:51:32-07:00 Message successfully delivered
+2015-02-13T19:52:07-07:00 Sending message 26987 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:52:07-07:00 Message successfully delivered
+2015-02-13T19:52:07-07:00 Sending message 26988 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:52:07-07:00 Message successfully delivered
+2015-02-13T19:52:07-07:00 Sending message 26989 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:52:07-07:00 Message successfully delivered
+2015-02-13T19:52:07-07:00 Sending message 26990 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:52:07-07:00 Message successfully delivered
+2015-02-13T19:52:07-07:00 Sending message 26991 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:52:07-07:00 Message successfully delivered
+2015-02-13T19:52:07-07:00 Sending message 26992 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:52:07-07:00 Message successfully delivered
+2015-02-13T19:52:07-07:00 Sending message 26993 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T19:52:07-07:00 Message successfully delivered
+2015-02-13T19:59:42-07:00 Sending message 26994 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-13T19:59:42-07:00 Message not delivered
+2015-02-13T19:59:42-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T19:59:42-07:00 Connection OK
+2015-02-13T19:59:42-07:00 Sending message 26995 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-13T19:59:42-07:00 Message successfully delivered
+2015-02-13T19:59:42-07:00 Sending message 26996 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-13T19:59:42-07:00 Message successfully delivered
+2015-02-13T19:59:42-07:00 Sending message 26997 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-13T19:59:42-07:00 Message successfully delivered
+2015-02-13T19:59:42-07:00 Sending message 26998 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-13T19:59:42-07:00 Message successfully delivered
+2015-02-13T19:59:42-07:00 Sending message 26999 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-13T19:59:42-07:00 Message successfully delivered
+2015-02-13T19:59:47-07:00 Sending message 26994 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-13T19:59:47-07:00 Message successfully delivered
+2015-02-13T20:01:37-07:00 Sending message 27000 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"badge":1,"alert":"Dad: He'll","loc":"41.739577, -86.098964","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T20:01:37-07:00 Message not delivered
+2015-02-13T20:01:37-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T20:01:37-07:00 Connection OK
+2015-02-13T20:01:37-07:00 Sending message 27001 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"badge":1,"alert":"Dad: He'll","loc":"41.739577, -86.098964","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T20:01:37-07:00 Message successfully delivered
+2015-02-13T20:01:37-07:00 Sending message 27002 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"badge":1,"alert":"Dad: He'll","loc":"41.739577, -86.098964","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T20:01:37-07:00 Message successfully delivered
+2015-02-13T20:01:37-07:00 Sending message 27003 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Dad: He'll","loc":"41.739577, -86.098964","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T20:01:37-07:00 Message successfully delivered
+2015-02-13T20:01:37-07:00 Sending message 27004 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"badge":1,"alert":"Dad: He'll","loc":"41.739577, -86.098964","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T20:01:37-07:00 Message successfully delivered
+2015-02-13T20:01:37-07:00 Sending message 27005 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"Dad: He'll","loc":"41.739577, -86.098964","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T20:01:37-07:00 Message successfully delivered
+2015-02-13T20:01:42-07:00 Sending message 27000 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"badge":1,"alert":"Dad: He'll","loc":"41.739577, -86.098964","who":"Dad","sound":"beep.caf"}}'
+2015-02-13T20:01:42-07:00 Message successfully delivered
+2015-02-13T20:01:42-07:00 Sending message 27006 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739588, -86.098987","who":"Patty","sound":"sweetbeep.caf"}}'
+2015-02-13T20:01:42-07:00 Message successfully delivered
+2015-02-13T20:02:02-07:00 Sending message 27007 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739447, -86.098975","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T20:02:02-07:00 Message not delivered
+2015-02-13T20:02:02-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T20:02:03-07:00 Connection OK
+2015-02-13T20:02:03-07:00 Sending message 27008 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739447, -86.098975","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T20:02:03-07:00 Message successfully delivered
+2015-02-13T20:02:03-07:00 Sending message 27009 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739447, -86.098975","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T20:02:03-07:00 Message successfully delivered
+2015-02-13T20:02:03-07:00 Sending message 27010 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739447, -86.098975","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T20:02:03-07:00 Message successfully delivered
+2015-02-13T20:02:03-07:00 Sending message 27011 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739447, -86.098975","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T20:02:03-07:00 Message successfully delivered
+2015-02-13T20:02:03-07:00 Sending message 27012 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739447, -86.098975","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T20:02:03-07:00 Message successfully delivered
+2015-02-13T20:02:08-07:00 Sending message 27007 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"badge":1,"alert":"Patty: Hi","loc":"41.739447, -86.098975","who":"Patty","sound":"beep.caf"}}'
+2015-02-13T20:02:08-07:00 Message successfully delivered
+2015-02-13T20:02:13-07:00 Sending message 27013 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T20:02:13-07:00 Message not delivered
+2015-02-13T20:02:13-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T20:02:13-07:00 Connection OK
+2015-02-13T20:02:13-07:00 Sending message 27014 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T20:02:13-07:00 Message successfully delivered
+2015-02-13T20:02:13-07:00 Sending message 27015 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T20:02:13-07:00 Message successfully delivered
+2015-02-13T20:02:13-07:00 Sending message 27016 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T20:02:13-07:00 Message successfully delivered
+2015-02-13T20:02:13-07:00 Sending message 27017 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T20:02:13-07:00 Message successfully delivered
+2015-02-13T20:02:13-07:00 Sending message 27018 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T20:02:13-07:00 Message successfully delivered
+2015-02-13T20:02:18-07:00 Sending message 27013 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739792, -86.099265","sound":"sweetbeep.caf"}}'
+2015-02-13T20:02:18-07:00 Message successfully delivered
+2015-02-13T20:02:18-07:00 Sending message 27019 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739513, -86.098988","who":"Dad","sound":"sweetbeep.caf"}}'
+2015-02-13T20:02:18-07:00 Message successfully delivered
+2015-02-13T20:16:23-07:00 Sending message 27020 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739440, -86.098981","who":"ED","sound":"sweetbeep.caf"}}'
+2015-02-13T20:16:23-07:00 Message not delivered
+2015-02-13T20:16:23-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T20:16:23-07:00 Connection OK
+2015-02-13T20:16:28-07:00 Sending message 27020 to 'ca78a7e57ace49031b0ed4a5c3dc6a4559ce00c93d174bfd34520ec5b13fa66a', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739440, -86.098981","who":"ED","sound":"sweetbeep.caf"}}'
+2015-02-13T20:16:28-07:00 Message successfully delivered
+2015-02-13T20:40:54-07:00 Sending message 27021 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739528, -86.098974","sound":"sweetbeep.caf"}}'
+2015-02-13T20:40:54-07:00 Message successfully delivered
+2015-02-13T20:40:54-07:00 Sending message 27022 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739528, -86.098974","sound":"sweetbeep.caf"}}'
+2015-02-13T20:40:54-07:00 Message successfully delivered
+2015-02-13T20:40:54-07:00 Sending message 27023 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739528, -86.098974","sound":"sweetbeep.caf"}}'
+2015-02-13T20:40:54-07:00 Message successfully delivered
+2015-02-13T20:40:54-07:00 Sending message 27024 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739528, -86.098974","sound":"sweetbeep.caf"}}'
+2015-02-13T20:40:54-07:00 Message successfully delivered
+2015-02-13T20:40:54-07:00 Sending message 27025 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739528, -86.098974","sound":"sweetbeep.caf"}}'
+2015-02-13T20:40:54-07:00 Message successfully delivered
+2015-02-13T20:40:54-07:00 Sending message 27026 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739528, -86.098974","sound":"sweetbeep.caf"}}'
+2015-02-13T20:40:54-07:00 Message successfully delivered
+2015-02-13T20:40:59-07:00 Sending message 27027 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.684453, -86.082809","who":"GramaNull","sound":"sweetbeep.caf"}}'
+2015-02-13T20:40:59-07:00 Message successfully delivered
+2015-02-13T20:57:29-07:00 Sending message 27028 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739513, -86.098988","who":"Dad","sound":"sweetbeep.caf"}}'
+2015-02-13T20:57:29-07:00 Message not delivered
+2015-02-13T20:57:29-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T20:57:29-07:00 Connection OK
+2015-02-13T20:57:34-07:00 Sending message 27028 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739513, -86.098988","who":"Dad","sound":"sweetbeep.caf"}}'
+2015-02-13T20:57:34-07:00 Message successfully delivered
+2015-02-13T21:11:00-07:00 Sending message 27029 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739485, -86.098908","sound":"sweetbeep.caf"}}'
+2015-02-13T21:11:00-07:00 Message successfully delivered
+2015-02-13T21:11:00-07:00 Sending message 27030 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739485, -86.098908","sound":"sweetbeep.caf"}}'
+2015-02-13T21:11:00-07:00 Message successfully delivered
+2015-02-13T21:11:00-07:00 Sending message 27031 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739485, -86.098908","sound":"sweetbeep.caf"}}'
+2015-02-13T21:11:00-07:00 Message successfully delivered
+2015-02-13T21:11:00-07:00 Sending message 27032 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739485, -86.098908","sound":"sweetbeep.caf"}}'
+2015-02-13T21:11:00-07:00 Message successfully delivered
+2015-02-13T21:11:00-07:00 Sending message 27033 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739485, -86.098908","sound":"sweetbeep.caf"}}'
+2015-02-13T21:11:00-07:00 Message successfully delivered
+2015-02-13T21:11:00-07:00 Sending message 27034 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739485, -86.098908","sound":"sweetbeep.caf"}}'
+2015-02-13T21:11:00-07:00 Message successfully delivered
+2015-02-13T21:11:05-07:00 Sending message 27035 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.684599, -86.082896","who":"GramaNull","sound":"sweetbeep.caf"}}'
+2015-02-13T21:11:05-07:00 Message successfully delivered
+2015-02-13T21:19:20-07:00 Sending message 27036 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739513, -86.098988","who":"Dad","sound":"sweetbeep.caf"}}'
+2015-02-13T21:19:20-07:00 Message not delivered
+2015-02-13T21:19:20-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-13T21:19:20-07:00 Connection OK
+2015-02-13T21:19:25-07:00 Sending message 27036 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.739513, -86.098988","who":"Dad","sound":"sweetbeep.caf"}}'
+2015-02-13T21:19:25-07:00 Message successfully delivered
+2015-02-13T21:31:46-07:00 Sending message 27037 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739526, -86.098965","sound":"sweetbeep.caf"}}'
+2015-02-13T21:31:46-07:00 Message successfully delivered
+2015-02-13T21:31:46-07:00 Sending message 27038 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739526, -86.098965","sound":"sweetbeep.caf"}}'
+2015-02-13T21:31:46-07:00 Message successfully delivered
+2015-02-13T21:31:46-07:00 Sending message 27039 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739526, -86.098965","sound":"sweetbeep.caf"}}'
+2015-02-13T21:31:46-07:00 Message successfully delivered
+2015-02-13T21:31:46-07:00 Sending message 27040 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739526, -86.098965","sound":"sweetbeep.caf"}}'
+2015-02-13T21:31:46-07:00 Message successfully delivered
+2015-02-13T21:31:46-07:00 Sending message 27041 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739526, -86.098965","sound":"sweetbeep.caf"}}'
+2015-02-13T21:31:46-07:00 Message successfully delivered
+2015-02-13T21:31:46-07:00 Sending message 27042 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0CB6144B3E5E4388858136DD7E424BE4","loc":"41.739526, -86.098965","sound":"sweetbeep.caf"}}'
+2015-02-13T21:31:46-07:00 Message successfully delivered
+2015-02-13T21:31:51-07:00 Sending message 27043 to 'f6357181537292befadf47c6d5803a53882df47f1c0f68bfd534f6c69810d7e5', payload: '{"aps":{"content-available":1,"badge":1,"loc":"41.684476, -86.082964","who":"GramaNull","sound":"sweetbeep.caf"}}'
+2015-02-13T21:31:51-07:00 Message successfully delivered
+2015-02-14T05:11:41-07:00 Sending message 27044 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"badge":1,"alert":"Patty: Happy Valentine's Day to Grandma Null, Grandma Simko and Grandpa Simko! We love you all very much!! Thanks for loving us!","loc":"41.739442, -86.099101","who":"Patty","sound":"beep.caf"}}'
+2015-02-14T05:11:41-07:00 Message not delivered
+2015-02-14T05:11:41-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-14T05:11:41-07:00 Connection OK
+2015-02-14T05:11:41-07:00 Sending message 27045 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Patty: Happy Valentine's Day to Grandma Null, Grandma Simko and Grandpa Simko! We love you all very much!! Thanks for loving us!","loc":"41.739442, -86.099101","who":"Patty","sound":"beep.caf"}}'
+2015-02-14T05:11:41-07:00 Message successfully delivered
+2015-02-14T05:11:41-07:00 Sending message 27046 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"badge":1,"alert":"Patty: Happy Valentine's Day to Grandma Null, Grandma Simko and Grandpa Simko! We love you all very much!! Thanks for loving us!","loc":"41.739442, -86.099101","who":"Patty","sound":"beep.caf"}}'
+2015-02-14T05:11:41-07:00 Message successfully delivered
+2015-02-14T05:11:41-07:00 Sending message 27047 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Patty: Happy Valentine's Day to Grandma Null, Grandma Simko and Grandpa Simko! We love you all very much!! Thanks for loving us!","loc":"41.739442, -86.099101","who":"Patty","sound":"beep.caf"}}'
+2015-02-14T05:11:41-07:00 Message successfully delivered
+2015-02-14T05:11:41-07:00 Sending message 27048 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"badge":1,"alert":"Patty: Happy Valentine's Day to Grandma Null, Grandma Simko and Grandpa Simko! We love you all very much!! Thanks for loving us!","loc":"41.739442, -86.099101","who":"Patty","sound":"beep.caf"}}'
+2015-02-14T05:11:41-07:00 Message successfully delivered
+2015-02-14T05:11:41-07:00 Sending message 27049 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"badge":1,"alert":"Patty: Happy Valentine's Day to Grandma Null, Grandma Simko and Grandpa Simko! We love you all very much!! Thanks for loving us!","loc":"41.739442, -86.099101","who":"Patty","sound":"beep.caf"}}'
+2015-02-14T05:11:41-07:00 Message successfully delivered
+2015-02-14T05:11:46-07:00 Sending message 27044 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"badge":1,"alert":"Patty: Happy Valentine's Day to Grandma Null, Grandma Simko and Grandpa Simko! We love you all very much!! Thanks for loving us!","loc":"41.739442, -86.099101","who":"Patty","sound":"beep.caf"}}'
+2015-02-14T05:11:46-07:00 Message successfully delivered
+2015-02-14T07:35:43-07:00 Sending message 27050 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-14T07:35:43-07:00 Message not delivered
+2015-02-14T07:35:43-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-14T07:35:44-07:00 Connection OK
+2015-02-14T07:35:44-07:00 Sending message 27051 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-14T07:35:44-07:00 Message successfully delivered
+2015-02-14T07:35:44-07:00 Sending message 27052 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-14T07:35:44-07:00 Message successfully delivered
+2015-02-14T07:35:44-07:00 Sending message 27053 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-14T07:35:44-07:00 Message successfully delivered
+2015-02-14T07:35:44-07:00 Sending message 27054 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-14T07:35:44-07:00 Message successfully delivered
+2015-02-14T07:35:49-07:00 Sending message 27050 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739577, -86.098964","sound":"sweetbeep.caf"}}'
+2015-02-14T07:35:49-07:00 Message successfully delivered
+2015-02-14T08:22:59-07:00 Sending message 27055 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739457, -86.099050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:22:59-07:00 Message not delivered
+2015-02-14T08:22:59-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-14T08:23:00-07:00 Connection OK
+2015-02-14T08:23:00-07:00 Sending message 27056 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739457, -86.099050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:23:00-07:00 Message successfully delivered
+2015-02-14T08:23:00-07:00 Sending message 27057 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739457, -86.099050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:23:00-07:00 Message successfully delivered
+2015-02-14T08:23:00-07:00 Sending message 27058 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739457, -86.099050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:23:00-07:00 Message successfully delivered
+2015-02-14T08:23:00-07:00 Sending message 27059 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739457, -86.099050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:23:00-07:00 Message successfully delivered
+2015-02-14T08:23:06-07:00 Sending message 27055 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739457, -86.099050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:23:06-07:00 Message successfully delivered
+2015-02-14T08:25:16-07:00 Sending message 27060 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:25:16-07:00 Message not delivered
+2015-02-14T08:25:16-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-14T08:25:16-07:00 Connection OK
+2015-02-14T08:25:16-07:00 Sending message 27061 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:25:16-07:00 Message successfully delivered
+2015-02-14T08:25:16-07:00 Sending message 27062 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:25:16-07:00 Message successfully delivered
+2015-02-14T08:25:16-07:00 Sending message 27063 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:25:16-07:00 Message successfully delivered
+2015-02-14T08:25:16-07:00 Sending message 27064 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:25:16-07:00 Message successfully delivered
+2015-02-14T08:25:21-07:00 Sending message 27060 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:25:21-07:00 Message successfully delivered
+2015-02-14T08:27:06-07:00 Sending message 27065 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739304, -86.098776","sound":"sweetbeep.caf"}}'
+2015-02-14T08:27:06-07:00 Message not delivered
+2015-02-14T08:27:06-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-14T08:27:06-07:00 Connection OK
+2015-02-14T08:27:06-07:00 Sending message 27066 to '7c1a5502e4cd013341bf6c8ebccf53540fc4474df5c405af03c84cfbe563662c', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739304, -86.098776","sound":"sweetbeep.caf"}}'
+2015-02-14T08:27:06-07:00 Message successfully delivered
+2015-02-14T08:27:06-07:00 Sending message 27067 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739304, -86.098776","sound":"sweetbeep.caf"}}'
+2015-02-14T08:27:06-07:00 Message successfully delivered
+2015-02-14T08:27:06-07:00 Sending message 27068 to '9e83aaa6ff426db0a57011641e38f788a7dbde2056c45ec64cc8fdf74a7d250b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739304, -86.098776","sound":"sweetbeep.caf"}}'
+2015-02-14T08:27:06-07:00 Message successfully delivered
+2015-02-14T08:27:06-07:00 Sending message 27069 to '41c0c1c1cd3cf2b4334d300df3f0ce16cd828546985da20e7058e17633a5eb18', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739304, -86.098776","sound":"sweetbeep.caf"}}'
+2015-02-14T08:27:06-07:00 Message successfully delivered
+2015-02-14T08:27:11-07:00 Sending message 27065 to '9ee89aa3e64b33f7b0795a4a767556bedae81e058042549f73492d8e442a3701', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739304, -86.098776","sound":"sweetbeep.caf"}}'
+2015-02-14T08:27:11-07:00 Message successfully delivered
+2015-02-14T08:27:11-07:00 Sending message 27070 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: Im Here","loc":"41.739563, -86.098896","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:27:11-07:00 Message successfully delivered
+2015-02-14T08:31:21-07:00 Sending message 27071 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739560, -86.098935","sound":"sweetbeep.caf"}}'
+2015-02-14T08:31:21-07:00 Message not delivered
+2015-02-14T08:31:21-07:00 Reconnecting to gateway.sandbox.push.apple.com:2195, attempt 1
+2015-02-14T08:31:21-07:00 Connection OK
+2015-02-14T08:31:21-07:00 Sending message 27072 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739560, -86.098935","sound":"sweetbeep.caf"}}'
+2015-02-14T08:31:21-07:00 Message successfully delivered
+2015-02-14T08:31:21-07:00 Sending message 27073 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739560, -86.098935","sound":"sweetbeep.caf"}}'
+2015-02-14T08:31:21-07:00 Message successfully delivered
+2015-02-14T08:31:26-07:00 Sending message 27071 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739560, -86.098935","sound":"sweetbeep.caf"}}'
+2015-02-14T08:31:26-07:00 Message successfully delivered
+2015-02-14T08:31:26-07:00 Sending message 27074 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: Im Here","loc":"41.739563, -86.098896","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:31:26-07:00 Message successfully delivered
+2015-02-14T08:31:26-07:00 Sending message 27075 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Steve4: Im Here","loc":"41.739070, -86.098918","who":"Steve4","sound":"beep.caf"}}'
+2015-02-14T08:31:26-07:00 Message successfully delivered
+2015-02-14T08:31:31-07:00 Sending message 27076 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Dad: Im Here","loc":"41.739403, -86.098728","who":"Dad","sound":"beep.caf"}}'
+2015-02-14T08:31:31-07:00 Message successfully delivered
+2015-02-14T08:31:51-07:00 Sending message 27077 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:31:51-07:00 Message successfully delivered
+2015-02-14T08:31:51-07:00 Sending message 27078 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:31:51-07:00 Message successfully delivered
+2015-02-14T08:31:51-07:00 Sending message 27079 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:31:51-07:00 Message successfully delivered
+2015-02-14T08:31:56-07:00 Sending message 27080 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Dad: Im Here","loc":"41.739403, -86.098728","who":"Dad","sound":"beep.caf"}}'
+2015-02-14T08:31:56-07:00 Message successfully delivered
+2015-02-14T08:31:56-07:00 Sending message 27081 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Steve4: Im Here","loc":"41.739070, -86.098918","who":"Steve4","sound":"beep.caf"}}'
+2015-02-14T08:31:56-07:00 Message successfully delivered
+2015-02-14T08:31:56-07:00 Sending message 27082 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Dad4s: Im Here","loc":"41.739437, -86.098825","who":"Dad4s","sound":"beep.caf"}}'
+2015-02-14T08:31:56-07:00 Message successfully delivered
+2015-02-14T08:32:06-07:00 Sending message 27083 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739304, -86.098776","sound":"sweetbeep.caf"}}'
+2015-02-14T08:32:06-07:00 Message successfully delivered
+2015-02-14T08:32:06-07:00 Sending message 27084 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739304, -86.098776","sound":"sweetbeep.caf"}}'
+2015-02-14T08:32:06-07:00 Message successfully delivered
+2015-02-14T08:32:06-07:00 Sending message 27085 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"0F19F7451DBD4562A7D310071A5A0844","loc":"41.739304, -86.098776","sound":"sweetbeep.caf"}}'
+2015-02-14T08:32:06-07:00 Message successfully delivered
+2015-02-14T08:32:11-07:00 Sending message 27086 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: Im Here","loc":"41.739563, -86.098896","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:32:11-07:00 Message successfully delivered
+2015-02-14T08:32:11-07:00 Sending message 27087 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Dad4s: Im Here","loc":"41.739437, -86.098825","who":"Dad4s","sound":"beep.caf"}}'
+2015-02-14T08:32:11-07:00 Message successfully delivered
+2015-02-14T08:32:11-07:00 Sending message 27088 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Steve4: Im Here","loc":"41.739070, -86.098918","who":"Steve4","sound":"beep.caf"}}'
+2015-02-14T08:32:11-07:00 Message successfully delivered
+2015-02-14T08:32:27-07:00 Sending message 27089 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:32:27-07:00 Message successfully delivered
+2015-02-14T08:32:27-07:00 Sending message 27090 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:32:27-07:00 Message successfully delivered
+2015-02-14T08:32:27-07:00 Sending message 27091 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:32:27-07:00 Message successfully delivered
+2015-02-14T08:32:32-07:00 Sending message 27092 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Steve4: Im Here","loc":"41.739070, -86.098918","who":"Steve4","sound":"beep.caf"}}'
+2015-02-14T08:32:32-07:00 Message successfully delivered
+2015-02-14T08:32:32-07:00 Sending message 27093 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Dad: Im Here","loc":"41.739403, -86.098728","who":"Dad","sound":"beep.caf"}}'
+2015-02-14T08:32:32-07:00 Message successfully delivered
+2015-02-14T08:32:32-07:00 Sending message 27094 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Dad4s: Im Here","loc":"41.739437, -86.098825","who":"Dad4s","sound":"beep.caf"}}'
+2015-02-14T08:32:32-07:00 Message successfully delivered
+2015-02-14T08:34:17-07:00 Sending message 27095 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739560, -86.098935","sound":"sweetbeep.caf"}}'
+2015-02-14T08:34:17-07:00 Message successfully delivered
+2015-02-14T08:34:17-07:00 Sending message 27096 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739560, -86.098935","sound":"sweetbeep.caf"}}'
+2015-02-14T08:34:17-07:00 Message successfully delivered
+2015-02-14T08:34:17-07:00 Sending message 27097 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739560, -86.098935","sound":"sweetbeep.caf"}}'
+2015-02-14T08:34:17-07:00 Message successfully delivered
+2015-02-14T08:34:22-07:00 Sending message 27098 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Steve4: Im Here","loc":"41.739070, -86.098918","who":"Steve4","sound":"beep.caf"}}'
+2015-02-14T08:34:22-07:00 Message successfully delivered
+2015-02-14T08:34:22-07:00 Sending message 27099 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: Im Here","loc":"41.739563, -86.098896","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:34:22-07:00 Message successfully delivered
+2015-02-14T08:35:07-07:00 Sending message 27100 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: Hi room","loc":"41.739423, -86.098952","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:35:07-07:00 Message successfully delivered
+2015-02-14T08:35:07-07:00 Sending message 27101 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: Hi room","loc":"41.739423, -86.098952","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:35:07-07:00 Message successfully delivered
+2015-02-14T08:35:07-07:00 Sending message 27102 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: Hi room","loc":"41.739423, -86.098952","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:35:07-07:00 Message successfully delivered
+2015-02-14T08:35:47-07:00 Sending message 27103 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Dad4s: Why didn't I get that","loc":"41.739470, -86.098978","who":"Dad4s","sound":"beep.caf"}}'
+2015-02-14T08:35:47-07:00 Message successfully delivered
+2015-02-14T08:35:47-07:00 Sending message 27104 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"badge":1,"alert":"Dad4s: Why didn't I get that","loc":"41.739470, -86.098978","who":"Dad4s","sound":"beep.caf"}}'
+2015-02-14T08:35:47-07:00 Message successfully delivered
+2015-02-14T08:35:47-07:00 Sending message 27105 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Dad4s: Why didn't I get that","loc":"41.739470, -86.098978","who":"Dad4s","sound":"beep.caf"}}'
+2015-02-14T08:35:47-07:00 Message successfully delivered
+2015-02-14T08:36:07-07:00 Sending message 27106 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Steve4: You should behave","loc":"41.739472, -86.098999","who":"Steve4","sound":"beep.caf"}}'
+2015-02-14T08:36:07-07:00 Message successfully delivered
+2015-02-14T08:36:07-07:00 Sending message 27107 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Steve4: You should behave","loc":"41.739472, -86.098999","who":"Steve4","sound":"beep.caf"}}'
+2015-02-14T08:36:07-07:00 Message successfully delivered
+2015-02-14T08:36:07-07:00 Sending message 27108 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Steve4: You should behave","loc":"41.739472, -86.098999","who":"Steve4","sound":"beep.caf"}}'
+2015-02-14T08:36:07-07:00 Message successfully delivered
+2015-02-14T08:37:02-07:00 Sending message 27109 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: O behave","loc":"41.739423, -86.098952","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:37:02-07:00 Message successfully delivered
+2015-02-14T08:37:02-07:00 Sending message 27110 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: O behave","loc":"41.739423, -86.098952","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:37:02-07:00 Message successfully delivered
+2015-02-14T08:37:02-07:00 Sending message 27111 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: O behave","loc":"41.739423, -86.098952","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:37:02-07:00 Message successfully delivered
+2015-02-14T08:52:43-07:00 Sending message 27112 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: I'm at a time when you","loc":"41.739505, -86.098949","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:52:43-07:00 Message successfully delivered
+2015-02-14T08:52:43-07:00 Sending message 27113 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: I'm at a time when you","loc":"41.739505, -86.098949","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:52:43-07:00 Message successfully delivered
+2015-02-14T08:52:43-07:00 Sending message 27114 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: I'm at a time when you","loc":"41.739505, -86.098949","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:52:43-07:00 Message successfully delivered
+2015-02-14T08:53:43-07:00 Sending message 27115 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"badge":1,"alert":"Dad: Oh yeah","loc":"41.739501, -86.098920","who":"Dad","sound":"beep.caf"}}'
+2015-02-14T08:53:43-07:00 Message successfully delivered
+2015-02-14T08:53:43-07:00 Sending message 27116 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Dad: Oh yeah","loc":"41.739501, -86.098920","who":"Dad","sound":"beep.caf"}}'
+2015-02-14T08:53:43-07:00 Message successfully delivered
+2015-02-14T08:53:43-07:00 Sending message 27117 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Dad: Oh yeah","loc":"41.739501, -86.098920","who":"Dad","sound":"beep.caf"}}'
+2015-02-14T08:53:43-07:00 Message successfully delivered
+2015-02-14T08:53:53-07:00 Sending message 27118 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739560, -86.098935","sound":"sweetbeep.caf"}}'
+2015-02-14T08:53:53-07:00 Message successfully delivered
+2015-02-14T08:53:53-07:00 Sending message 27119 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739560, -86.098935","sound":"sweetbeep.caf"}}'
+2015-02-14T08:53:53-07:00 Message successfully delivered
+2015-02-14T08:53:53-07:00 Sending message 27120 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"89DA38E769B44F84BFDBD35390C40F54","loc":"41.739560, -86.098935","sound":"sweetbeep.caf"}}'
+2015-02-14T08:53:53-07:00 Message successfully delivered
+2015-02-14T08:53:58-07:00 Sending message 27121 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Dad: Im Here","loc":"41.739403, -86.098728","who":"Dad","sound":"beep.caf"}}'
+2015-02-14T08:53:58-07:00 Message successfully delivered
+2015-02-14T08:53:58-07:00 Sending message 27122 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Jack-iPad3: Im Here","loc":"41.739563, -86.098896","who":"Jack-iPad3","sound":"beep.caf"}}'
+2015-02-14T08:53:58-07:00 Message successfully delivered
+2015-02-14T08:53:58-07:00 Sending message 27123 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"badge":1,"alert":"Steve4: Im Here","loc":"41.739070, -86.098918","who":"Steve4","sound":"beep.caf"}}'
+2015-02-14T08:53:58-07:00 Message successfully delivered
+2015-02-14T08:54:03-07:00 Sending message 27124 to '1eb7528134451a0adaa8de2c65f6321a271907ad0d19183b1a569aa2506193cd', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:54:03-07:00 Message successfully delivered
+2015-02-14T08:54:03-07:00 Sending message 27125 to '113bbb93c7304e1fd0949777aa0d1b9217523c5cf494f7239a6b997257eedffe', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:54:03-07:00 Message successfully delivered
+2015-02-14T08:54:03-07:00 Sending message 27126 to '231ea452b2a23666f715f53b26b49e8a37cdacfcfa7121ef2835b3d45ee5244b', payload: '{"aps":{"content-available":1,"extra":"whereru","asker":"4A51D81D92F441268D9759BF67039E37","loc":"41.738682, -86.098050","sound":"sweetbeep.caf"}}'
+2015-02-14T08:54:03-07:00 Message successfully delivered
+2015-02-14T08:54:08-07:00 Sending message 27127 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Dad: Im Here","loc":"41.739403, -86.098728","who":"Dad","sound":"beep.caf"}}'
+2015-02-14T08:54:08-07:00 Message successfully delivered
+2015-02-14T08:54:08-07:00 Sending message 27128 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Steve4: Im Here","loc":"41.739070, -86.098918","who":"Steve4","sound":"beep.caf"}}'
+2015-02-14T08:54:08-07:00 Message successfully delivered
+2015-02-14T08:54:08-07:00 Sending message 27129 to '30ee6815fea787b7f9db2e902c943f64276beeaa829b92da5a7fa4e89922de1e', payload: '{"aps":{"badge":1,"alert":"Dad4s: Im Here","loc":"41.739437, -86.098825","who":"Dad4s","sound":"beep.caf"}}'
+2015-02-14T08:54:08-07:00 Message successfully delivered
