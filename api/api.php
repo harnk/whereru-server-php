@@ -37,7 +37,7 @@ try
 	// You're probably running this on a fast local server but in production
 	// mode people will be using it on a mobile device over a slow connection.
 	if (APPLICATION_ENV == 'development')
-		// sleep(2);
+		sleep(2);
 
 	// To keep the code clean, I put the API into its own class. Create an
 	// instance of that class and let it handle the request.
@@ -283,8 +283,8 @@ class API
 			// Put the sender's name and the message text into the JSON payload
 			// for the push notification.
 
-			// $payload = $this->makeImherePayload($user->nickname, $text, $location);
-			$payload = $this->makePayload($user->nickname, $text, $location);
+			$payload = $this->makeImherePayload($user->nickname, $text, $location);
+			// $payload = $this->makePayload($user->nickname, $text, $location);
 
 			// Find the device tokens for all other users who are registered
 			// for this secret code. We exclude the device token of the sender
@@ -493,9 +493,13 @@ class API
 		// Combine everything into a JSON string
 		//
 		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","sound":"beep.caf"}}';
-
 		// $payload = '{"aps":{"content-available":1,"loc":"' . $locJson . '","sound":"beep.caf"}}';
-		$payload = '{"aps":{"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"beep.caf"}}';
+
+		// $payload = '{"aps":{"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"beep.caf"}}';
+		// Take the custom keys out of aps
+		$payload = '{"aps":{"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}, ' . '"loc":"' . $locJson . '","who":"'. $nameJson .'"}';
+
+
 		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
 		return $payload;
 	}
@@ -521,9 +525,10 @@ class API
 
 		// Combine everything into a JSON string
 		//
-		$payload = '{"aps":{"content-available":1,"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"sweetbeep.caf"}}';
-		// $payload = '{"aps":{"content-available":1,"badge":1,"loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"sweetbeep.caf"}}';
-		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
+		// $payload = '{"aps":{"content-available":1,"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"sweetbeep.caf"}}';
+		// Take the custom keys out of aps
+		$payload = '{"aps":{"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","sound":"sweetbeep.caf"}, "extra":"imhere", ' . '"loc":"' . $locJson . '","who":"'. $nameJson .'"}';
+
 		return $payload;
 	}
 
@@ -554,8 +559,9 @@ class API
 
 
 		//TRY TAKING IT OUT COMPLETELY AND SEE IF BKGND STILL RELAYS THE PING
-//		$payload = '{"aps":{"content-available":1,"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '","sound":"sweetbeep.caf"}}';
-		$payload = '{"aps":{"content-available":1,"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '","sound":"sweetbeep.caf"}}';
+		// $payload = '{"aps":{"content-available":1,"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '","sound":"sweetbeep.caf"}}';
+		//Take extra, asker and loc OUT of aps
+		$payload = '{"aps":{"content-available":1,"sound":"sweetbeep.caf"},"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '"}';
 
 
 		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
