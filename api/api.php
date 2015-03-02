@@ -250,13 +250,13 @@ class API
 			{
 				$this->addPushNotification($token, $payload);
 				//Maybe put a slight delay between each send so receiver has time to deal with them??
-				// sleep(1);
+				// sleep(2);
 			}
 		}
 	}
 
 	// The "imhere" API command is a user telling the asker where he is
-	//
+	// THIS IS A ONE TO ONE COMMAND
 	// This command takes the following POST parameters:
 	//
 	// - user_Id:  A unique identifier. Must be a string of 40 hexadecimal characters.
@@ -290,7 +290,10 @@ class API
 			// for this secret code. We exclude the device token of the sender
 			// of the message, so he will not get a push notification. We also
 			// exclude users who have not submitted a valid device token yet.
-			$stmt = $this->pdo->prepare("SELECT device_token FROM active_users WHERE user_id = ?");
+
+			// SCXTT IS THIS NEXT LINE CORRECT? DONT WE WANT THE DEVICE TOKEN FOR THE ASKER ID BECAUSE THAT IS WHO WE ARE SENDING THIS TOO??
+			// $stmt = $this->pdo->prepare("SELECT device_token FROM active_users WHERE user_id = ?");
+			$stmt = $this->pdo->prepare('SELECT device_token FROM active_users WHERE user_id = ? LIMIT 1');
 
 			$stmt->execute(array($askerId));
 
