@@ -36,8 +36,9 @@ try
 	// In development mode, we fake a delay that makes testing more realistic.
 	// You're probably running this on a fast local server but in production
 	// mode people will be using it on a mobile device over a slow connection.
-	if (APPLICATION_ENV == 'development')
-		sleep(2);
+	if (APPLICATION_ENV == 'development'){
+		sleep(2);		
+	}
 
 	// To keep the code clean, I put the API into its own class. Create an
 	// instance of that class and let it handle the request.
@@ -159,6 +160,7 @@ class API
 				case 'message': $this->handleMessage(); return;
 				case 'find': $this->handleFind(); return;
 				case 'imhere': $this->handleImhere(); return;				
+				case 'getroom': $this->handleImhere(); return;				
 			}
 		}
 
@@ -187,6 +189,7 @@ class API
 		$token = $this->getDeviceToken(true);
 		$name = $this->getString('name', 255);
 		$code = $this->getString('code', 255);
+		$location = $this->getString('location', self::MAX_MESSAGE_LENGTH, true);
 
 		// When the client sends a "join" command, we add a new record to the
 		// active_users table. We identify the client by the user_id that it
@@ -203,8 +206,8 @@ class API
 		$stmt = $this->pdo->prepare('DELETE FROM active_users WHERE user_Id = ?');
 		$stmt->execute(array($userId));
 
-		$stmt = $this->pdo->prepare('INSERT INTO active_users (user_Id, device_token, nickname, secret_code, ip_address) VALUES (?, ?, ?, ?, ?)');
-		$stmt->execute(array($userId, $token, $name, $code, $_SERVER['REMOTE_ADDR']));
+		$stmt = $this->pdo->prepare('INSERT INTO active_users (user_Id, device_token, nickname, secret_code, location, loc_time, ip_address) VALUES (?, ?, ?, ?, ?, NOW(), ?)');
+		$stmt->execute(array($userId, $token, $name, $code, $location, $_SERVER['REMOTE_ADDR']));
 
 		$this->pdo->commit();
 	}
@@ -232,6 +235,12 @@ class API
 
 		if ($user !== false)
 		{
+			//First update the askers location in active_users
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt->execute(array($location, $userId));
+			// $stmt = $this->pdo->prepare('UPDATE active_users SET loc_time = NOW() WHERE user_Id = ?');
+			// $stmt->execute(array($location, $userId));
+
 			// Put the sender's name and the message text into the JSON payload
 			// for the push notification.
 			// $payload = $this->makeFindPayload($user->nickname, $text, $location);
@@ -280,21 +289,16 @@ class API
 
 		if ($user !== false)
 		{
+			//First update the responders location and current time in active_users
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt->execute(array($location, $userId));
 			// Put the sender's name and the message text into the JSON payload
 			// for the push notification.
-
 			$payload = $this->makeImherePayload($user->nickname, $text, $location);
 			// $payload = $this->makePayload($user->nickname, $text, $location);
 
-			// Find the device tokens for all other users who are registered
-			// for this secret code. We exclude the device token of the sender
-			// of the message, so he will not get a push notification. We also
-			// exclude users who have not submitted a valid device token yet.
-
-			// SCXTT IS THIS NEXT LINE CORRECT? DONT WE WANT THE DEVICE TOKEN FOR THE ASKER ID BECAUSE THAT IS WHO WE ARE SENDING THIS TOO??
-			// $stmt = $this->pdo->prepare("SELECT device_token FROM active_users WHERE user_id = ?");
+			// Now get the device token for the asker
 			$stmt = $this->pdo->prepare('SELECT device_token FROM active_users WHERE user_id = ? LIMIT 1');
-
 			$stmt->execute(array($askerId));
 
 			$tokens = $stmt->fetchAll(PDO::FETCH_COLUMN);
@@ -335,6 +339,23 @@ class API
 		$token = $this->getDeviceToken(false);
 		$stmt = $this->pdo->prepare('UPDATE active_users SET device_token = ? WHERE user_Id = ?');
 		$stmt->execute(array($token, $userId));
+	}
+
+	// The "updateLocation" API command updates the user's current location in active_users.
+	//
+	// This command takes the following POST parameters:
+	//
+	// - user_id:  A unique identifier. Must be a string of 40 hexadecimal characters.
+	// - location: The device's current sent location. Must be a string in the form of '41.739486, -86.099075'
+	//          characters.
+	//
+	function handleUpdateLocation()
+	{
+		$userId = $this->getUserId();
+		// $token = $this->getDeviceToken(false); scxtt
+		$location = $this->getString('location', self::MAX_MESSAGE_LENGTH, true);
+		$stmt = $this->pdo->prepare('UPDATE active_users SET location = ? WHERE user_Id = ?');
+		$stmt->execute(array($location, $userId));
 	}
 
 	// The "message" API command sends a message to all users who are registered
