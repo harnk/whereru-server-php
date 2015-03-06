@@ -157,10 +157,11 @@ class API
 				case 'join': $this->handleJoin(); return;
 				case 'leave': $this->handleLeave(); return;
 				case 'update': $this->handleUpdate(); return;
+				//Scxtt next line needs to update location in active_users
 				case 'message': $this->handleMessage(); return;
 				case 'find': $this->handleFind(); return;
 				case 'imhere': $this->handleImhere(); return;				
-				case 'getroom': $this->handleImhere(); return;				
+				case 'getroom': $this->handleFindLast(); return;				
 			}
 		}
 
@@ -259,8 +260,63 @@ class API
 			{
 				$this->addPushNotification($token, $payload);
 				//Maybe put a slight delay between each send so receiver has time to deal with them??
-				// sleep(2);
+				// sleep(1);
 			}
+		}
+	}
+
+
+	// The "getroom" API command pulls the last known locations of all users in the room with user_id
+	// by polling active_users where secret_code = room and returning nickname and location 
+	// and loc_time. It also updates the askers current location while we are at it
+	// This command takes the following POST parameters:
+	//
+	// - user_id: A unique identifier. Must be a string of 40 hexadecimal characters.
+	// 
+	function handleFindLast()
+	{
+		$userId = $this->getUserId();
+		$text = $this->getString('text', self::MAX_MESSAGE_LENGTH, true);
+		$location = $this->getString('location', self::MAX_MESSAGE_LENGTH, true);
+
+		// First, we get the record for the sender of the message from the
+		// active_users table. That gives us the nickname, device token, and
+		// secret code for that user.
+
+		$stmt = $this->pdo->prepare('SELECT * FROM active_users WHERE user_Id = ? LIMIT 1');
+		$stmt->execute(array($userId));
+		$user = $stmt->fetch(PDO::FETCH_OBJ);
+
+		if ($user !== false)
+		{
+			//First update the askers location in active_users
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt->execute(array($location, $userId));
+
+			// Put the sender's name and the message text into the JSON payload
+			// for the push notification.
+			$payload = $this->makeFindPayload($userId, $text, $location);
+
+			// Find the locations for all other users who are registered
+			// for this secret code. We exclude the location of the sender
+			// of the message, since he already knows. We also
+			// exclude users who have not submitted a valid device token yet.
+			$stmt = $this->pdo->prepare("SELECT location, nickname FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0'");
+			$stmt->execute(array($user->secret_code, $user->device_token));
+			$userlocs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+			echo json_encode($userlocs);
+
+			// We are done now
+			exit();
+
+			// // // Send out a push notification to each of these devices.
+			// // foreach ($tokens as $token)
+			// // {
+			// // 	$this->addPushNotification($token, $payload);
+			// // 	//Maybe put a slight delay between each send so receiver has time to deal with them??
+			// // 	// sleep(1);
+			// // }
 		}
 	}
 
@@ -290,16 +346,26 @@ class API
 		if ($user !== false)
 		{
 			//First update the responders location and current time in active_users
-			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
-			$stmt->execute(array($location, $userId));
+
+			//SCXTT comment the next two lines out for now because they seem to break what follows
+			// $stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			// $stmt->execute(array($location, $userId));
+			
 			// Put the sender's name and the message text into the JSON payload
 			// for the push notification.
+
+
+
+
+
 			$payload = $this->makeImherePayload($user->nickname, $text, $location);
 			// $payload = $this->makePayload($user->nickname, $text, $location);
 
 			// Now get the device token for the asker
 			$stmt = $this->pdo->prepare('SELECT device_token FROM active_users WHERE user_id = ? LIMIT 1');
 			$stmt->execute(array($askerId));
+			// $token = $stmt->fetch(PDO::FETCH_OBJ);
+			// $this->addPushNotification($token, $payload);
 
 			$tokens = $stmt->fetchAll(PDO::FETCH_COLUMN);
 
@@ -307,7 +373,13 @@ class API
 			foreach ($tokens as $token)
 			{
 				$this->addPushNotification($token, $payload);
-			}
+			}	
+
+
+
+
+
+
 		}
 	}
 
