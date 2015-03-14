@@ -161,6 +161,7 @@ class API
 				case 'message': $this->handleMessage(); return;
 				case 'find': $this->handleFind(); return;
 				case 'imhere': $this->handleImhere(); return;				
+				case 'liveupdate': $this->handleLiveUpdate(); return;				
 				case 'getroom': $this->handleFindLast(); return;				
 			}
 		}
@@ -262,6 +263,15 @@ class API
 				//Maybe put a slight delay between each send so receiver has time to deal with them??
 				// sleep(1);
 			}
+
+			$stmt = $this->pdo->prepare("SELECT location, nickname FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0'");
+			$stmt->execute(array($user->secret_code, $user->device_token));
+			$userlocs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+			echo json_encode($userlocs);
+
+			// We are done now
+			exit();
 		}
 	}
 
@@ -345,18 +355,9 @@ class API
 
 		if ($user !== false)
 		{
-			//First update the responders location and current time in active_users
-
-			//SCXTT comment the next two lines out for now because they seem to break what follows
-			// $stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
-			// $stmt->execute(array($location, $userId));
-			
+						
 			// Put the sender's name and the message text into the JSON payload
 			// for the push notification.
-
-
-
-
 
 			$payload = $this->makeImherePayload($user->nickname, $text, $location);
 			// $payload = $this->makePayload($user->nickname, $text, $location);
@@ -375,10 +376,40 @@ class API
 				$this->addPushNotification($token, $payload);
 			}	
 
+			// Finally update the responders location and current time in active_users
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt->execute(array($location, $userId));
 
+		}
+	}
 
+	// The "imhere" API command is a user telling the asker where he is
+	// THIS IS A ONE TO ONE COMMAND
+	// This command takes the following POST parameters:
+	//
+	// - user_Id:  A unique identifier. Must be a string of 40 hexadecimal characters.
+	// - asker: The user_Id of the one who wants to know and will get the push
+	// - location: longitute and latitude coordinates.
+	//
+	function handleLiveUpdate()
+	{
+		$userId = $this->getUserId();
+		$location = $this->getString('location', self::MAX_MESSAGE_LENGTH, true);
 
+		// First, we get the record for the sender of the message from the
+		// active_users table. That gives us the nickname, device token, and
+		// secret code for that user.
 
+		$stmt = $this->pdo->prepare('SELECT * FROM active_users WHERE user_Id = ? LIMIT 1');
+		$stmt->execute(array($userId));
+		$user = $stmt->fetch(PDO::FETCH_OBJ);
+
+		if ($user !== false)
+		{
+						
+			// Finally update the responders location and current time in active_users
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt->execute(array($location, $userId));
 
 		}
 	}
@@ -426,7 +457,9 @@ class API
 		$userId = $this->getUserId();
 		// $token = $this->getDeviceToken(false); scxtt
 		$location = $this->getString('location', self::MAX_MESSAGE_LENGTH, true);
-		$stmt = $this->pdo->prepare('UPDATE active_users SET location = ? WHERE user_Id = ?');
+
+		// Finally update the responders location and current time in active_users
+		$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
 		$stmt->execute(array($location, $userId));
 	}
 
@@ -471,6 +504,11 @@ class API
 			{
 				$this->addPushNotification($token, $payload);
 			}
+
+			// Finally update the responders location and current time in active_users
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt->execute(array($location, $userId));
+
 		}
 	}
 
