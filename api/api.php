@@ -264,7 +264,7 @@ class API
 				// sleep(1);
 			}
 
-			$stmt = $this->pdo->prepare("SELECT location, nickname FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0'");
+			$stmt = $this->pdo->prepare("SELECT location, nickname, loc_time FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0'");
 			$stmt->execute(array($user->secret_code, $user->device_token));
 			$userlocs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -299,7 +299,7 @@ class API
 
 		if ($user !== false)
 		{
-			//First update the askers location in active_users
+			//First update the askers location and time in active_users
 			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
 			$stmt->execute(array($location, $userId));
 
@@ -311,7 +311,7 @@ class API
 			// for this secret code. We exclude the location of the sender
 			// of the message, since he already knows. We also
 			// exclude users who have not submitted a valid device token yet.
-			$stmt = $this->pdo->prepare("SELECT location, nickname FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0'");
+			$stmt = $this->pdo->prepare("SELECT location, nickname, loc_time FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0'");
 			$stmt->execute(array($user->secret_code, $user->device_token));
 			$userlocs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
