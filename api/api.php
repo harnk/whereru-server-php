@@ -505,6 +505,9 @@ class API
 				$this->addPushNotification($token, $payload);
 			}
 
+			// add a row to the message table with nickname, message, location, secret_code
+			$this->addMessage($userId, $user->nickname, $text, $location, $user->secret_code);
+
 			// Finally update the responders location and current time in active_users
 			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
 			$stmt->execute(array($location, $userId));
@@ -725,6 +728,17 @@ class API
 		{
 			$stmt = $this->pdo->prepare('INSERT INTO push_queue (device_token, payload, time_queued) VALUES (?, ?, NOW())');
 			$stmt->execute(array($deviceToken, $payload));
+		}
+	}
+	function addMessage($userId, $nickName, $message, $location, $secret_code)
+	{
+		// Payloads have a maximum size of 256 bytes. If the payload is too
+		// large (which shouldn't happen), we won't send this notification.
+		// iOS8 has increased payload size to 2KB
+		if (strlen($message) <= 2048)
+		{
+			$stmt = $this->pdo->prepare('INSERT INTO messages (user_id, nickname, message, location, secret_code, time_posted) VALUES (?, ?, ?, ?, ?, NOW())');
+			$stmt->execute(array($userId, $nickName, $message, $location, $secret_code));
 		}
 	}
 }
