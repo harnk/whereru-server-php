@@ -162,7 +162,8 @@ class API
 				case 'find': $this->handleFind(); return;
 				case 'imhere': $this->handleImhere(); return;				
 				case 'liveupdate': $this->handleLiveUpdate(); return;				
-				case 'getroom': $this->handleFindLast(); return;				
+				case 'getroom': $this->handleFindLast(); return;		
+				case 'getroommessages': $this->handleGetRoomMessages(); return;		
 			}
 		}
 
@@ -327,6 +328,47 @@ class API
 			// // 	//Maybe put a slight delay between each send so receiver has time to deal with them??
 			// // 	// sleep(1);
 			// // }
+		}
+	}
+
+	// The "getroommessages" API command pulls the last 30 messages in the room (secret_code)
+	// by polling messages where secret_code = room and returning nickname, message and location 
+	// and time_posted. It also updates the askers current location while we are at it
+	// This command takes the following POST parameters:
+	//
+	// - user_id: A unique identifier. Must be a string of 40 hexadecimal characters.
+	// -secret_code: The name of the room for which we want to get the messages
+	function handleGetRoomMessages()
+	{
+		$userId = $this->getUserId();
+		// $text = $this->getString('text', self::MAX_MESSAGE_LENGTH, true);
+		$room = $this->getString('secret_code', self::MAX_MESSAGE_LENGTH, true);
+		$location = $this->getString('location', self::MAX_MESSAGE_LENGTH, true);
+
+		// First, we get the record for the sender of the message from the
+		// active_users table. That gives us the nickname, device token, and
+		// secret code for that user.
+
+		$stmt = $this->pdo->prepare('SELECT * FROM messages WHERE secret_code = ? LIMIT 30');
+		$stmt->execute(array($room));
+		$messages = $stmt->fetch(PDO::FETCH_OBJ);
+
+		if ($messages !== false)
+		{
+			//First update the askers location and time in active_users
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt->execute(array($location, $userId));
+
+			// Find the messages for all in the room
+			// for this secret code. 
+			$stmt = $this->pdo->prepare("SELECT * FROM messages WHERE secret_code = ?");
+			$stmt->execute(array($messages->secret_code));
+			$returnMessages = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+			echo json_encode($returnMessages);
+
+			// We are done now
+			exit();
 		}
 	}
 
@@ -732,9 +774,7 @@ class API
 	}
 	function addMessage($userId, $nickName, $message, $location, $secret_code)
 	{
-		// Payloads have a maximum size of 256 bytes. If the payload is too
-		// large (which shouldn't happen), we won't send this notification.
-		// iOS8 has increased payload size to 2KB
+		// add this message to the messages table
 		if (strlen($message) <= 2048)
 		{
 			$stmt = $this->pdo->prepare('INSERT INTO messages (user_id, nickname, message, location, secret_code, time_posted) VALUES (?, ?, ?, ?, ?, NOW())');
