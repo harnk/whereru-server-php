@@ -239,7 +239,7 @@ class API
 		if ($user !== false)
 		{
 			//First update the askers location in active_users
-			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
 			$stmt->execute(array($location, $userId));
 			// $stmt = $this->pdo->prepare('UPDATE active_users SET loc_time = NOW() WHERE user_Id = ?');
 			// $stmt->execute(array($location, $userId));
@@ -301,7 +301,7 @@ class API
 		if ($user !== false)
 		{
 			//First update the askers location and time in active_users
-			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
 			$stmt->execute(array($location, $userId));
 
 			// Put the sender's name and the message text into the JSON payload
@@ -356,7 +356,7 @@ class API
 		if ($messages !== false)
 		{
 			//First update the askers location and time in active_users
-			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
 			$stmt->execute(array($location, $userId));
 
 			// Find the messages for all in the room
@@ -419,7 +419,7 @@ class API
 			}	
 
 			// Finally update the responders location and current time in active_users
-			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
 			$stmt->execute(array($location, $userId));
 
 		}
@@ -450,7 +450,7 @@ class API
 		{
 						
 			// Finally update the responders location and current time in active_users
-			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
 			$stmt->execute(array($location, $userId));
 
 		}
@@ -501,7 +501,7 @@ class API
 		$location = $this->getString('location', self::MAX_MESSAGE_LENGTH, true);
 
 		// Finally update the responders location and current time in active_users
-		$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+		$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
 		$stmt->execute(array($location, $userId));
 	}
 
@@ -551,7 +551,7 @@ class API
 			$this->addMessage($userId, $user->nickname, $text, $location, $user->secret_code);
 
 			// Finally update the responders location and current time in active_users
-			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = NOW() WHERE user_Id = ?');
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
 			$stmt->execute(array($location, $userId));
 
 		}
