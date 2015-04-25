@@ -547,7 +547,7 @@ class API
 				$this->addPushNotification($token, $payload);
 			}
 
-			// add a row to the message table with nickname, message, location, secret_code
+			// add a row to the message table with nickname, message, location, secret_code AND TIME_POSTED
 			$this->addMessage($userId, $user->nickname, $text, $location, $user->secret_code);
 
 			// Finally update the responders location and current time in active_users
@@ -777,7 +777,7 @@ class API
 		// add this message to the messages table
 		if (strlen($message) <= 2048)
 		{
-			$stmt = $this->pdo->prepare('INSERT INTO messages (user_id, nickname, message, location, secret_code, time_posted) VALUES (?, ?, ?, ?, ?, NOW())');
+			$stmt = $this->pdo->prepare('INSERT INTO messages (user_id, nickname, message, location, secret_code, time_posted) VALUES (?, ?, ?, ?, ?, UTC_TIMESTAMP())');
 			$stmt->execute(array($userId, $nickName, $message, $location, $secret_code));
 		}
 	}
