@@ -1,4 +1,0 @@
-[13-Dec-2014 21:25:45 America/Denver] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home4/altcoinf/public_html/whereru/simplepush.php on line 28
-[13-Dec-2014 21:53:59 America/Denver] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home4/altcoinf/public_html/whereru/simplepush.php on line 28
-[13-Dec-2014 22:04:34 America/Denver] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home4/altcoinf/public_html/whereru/simplepush.php on line 28
-[14-Dec-2014 08:10:21 America/Denver] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home4/altcoinf/public_html/whereru/simplepush.php on line 28
