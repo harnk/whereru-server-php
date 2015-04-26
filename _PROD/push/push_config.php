@@ -7,7 +7,7 @@ $config = array(
 	'development' => array(
 
 		// The APNS server that we will use
-		'server' => 'gateway.sandbox.push.apple.com:2195',
+		'server' => 'gateway.push.apple.com:2195',
 
 		// The SSL certificate that allows us to connect to the APNS servers
 		'certificate' => 'ck_development.pem',
@@ -26,7 +26,7 @@ $config = array(
 			// 'password' => 'd]682\#%yI1nb3',
 		'db' => array(
 			'host'     => 'localhost',
-			'dbname'   => 'altcoinf_pushwhereru',
+			'dbname'   => 'altcoinf_pushwhereruprod',
 			'username' => 'altcoinf_pushw',
 			'password' => 'd]682\#%yI1nb3',
 			),
@@ -43,14 +43,14 @@ $config = array(
 
 		// The SSL certificate that allows us to connect to the APNS servers
 		'certificate' => 'ck_production.pem',
-		'passphrase' => 'pushchat',
+		'passphrase' => 'whereru',
 
 		// Configuration of the MySQL database
 		'db' => array(
 			'host'     => 'localhost',
-			'dbname'   => 'pushchat',
-			'username' => 'pushchat',
-			'password' => 'password',
+			'dbname'   => 'altcoinf_pushwhereruprod',
+			'username' => 'altcoinf_pushw',
+			'password' => 'd]682\#%yI1nb3',
 			),
 
 		// Name and path of our log file
