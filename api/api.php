@@ -124,6 +124,7 @@ class API
 	// Because the payload only allows for 256 bytes and there is some overhead
 	// we limit the message text to 190 characters.
 	const MAX_MESSAGE_LENGTH = 190;
+	const MAX_MESSAGE_CUTTOFF = 120;
 
 	private $pdo;
 
@@ -663,7 +664,7 @@ class API
 
 		// Convert and truncate the message text
 		$textJson = $this->jsonEncode($text);
-		$textJson = truncateUtf8($textJson, self::MAX_MESSAGE_LENGTH);
+		$textJson = truncateUtf8($textJson, self::MAX_MESSAGE_CUTTOFF);
 
 		// Convert and truncate the location data
 		$locJson = $this->jsonEncode($location);
@@ -676,7 +677,7 @@ class API
 
 		// $payload = '{"aps":{"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"beep.caf"}}';
 		// Take the custom keys out of aps
-		$payload = '{"aps":{"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}, ' . '"loc":"' . $locJson . '","who":"'. $nameJson .'"}';
+		$payload = '{"aps":{"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '...","sound":"beep.caf"}, ' . '"loc":"' . $locJson . '","who":"'. $nameJson .'"}';
 
 
 		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
@@ -703,10 +704,11 @@ class API
 		$locJson = truncateUtf8($locJson, self::MAX_MESSAGE_LENGTH);
 
 		// Combine everything into a JSON string
-		//
-		// $payload = '{"aps":{"content-available":1,"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","who":"' . $nameJson . '","sound":"sweetbeep.caf"}}';
-		// Take the custom keys out of aps
-		$payload = '{"aps":{"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","sound":"sweetbeep.caf"}, "extra":"imhere", ' . '"loc":"' . $locJson . '","who":"'. $nameJson .'"}';
+		// for prod make this one silent as well
+		// Test
+		// $payload = '{"aps":{"badge":1,"alert":"' . $nameJson . ': ' . $textJson . '","sound":"sweetbeep.caf"}, "extra":"imhere", ' . '"loc":"' . $locJson . '","who":"'. $nameJson .'"}';
+		//Prod
+		$payload = '{"aps":{"badge":1}, "extra":"imhere", ' . '"loc":"' . $locJson . '","who":"'. $nameJson .'"}';
 
 		return $payload;
 	}
@@ -737,10 +739,10 @@ class API
 		// $payload = '{"aps":{"content-available":1,"loc":"' . $locJson . '","sound":"beep.caf"}}';
 
 
-		//TRY TAKING IT OUT COMPLETELY AND SEE IF BKGND STILL RELAYS THE PING
-		// $payload = '{"aps":{"content-available":1,"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '","sound":"sweetbeep.caf"}}';
 		//Take extra, asker and loc OUT of aps
-		$payload = '{"aps":{"content-available":1,"sound":"sweetbeep.caf"},"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '"}';
+		// SCXTT - took the click sound out for prod release - add this next line back in for texting apns
+		// $payload = '{"aps":{"content-available":1,"sound":"sweetbeep.caf"},"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '"}';
+		$payload = '{"aps":{"content-available":1},"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '"}';
 
 
 		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
