@@ -210,6 +210,9 @@ class API
 		$stmt = $this->pdo->prepare('DELETE FROM active_users WHERE user_Id = ?');
 		$stmt->execute(array($userId));
 
+		$stmt = $this->pdo->prepare('DELETE FROM active_users WHERE device_token = ?');
+		$stmt->execute(array($token));
+
 		$stmt = $this->pdo->prepare('INSERT INTO active_users (user_Id, device_token, nickname, secret_code, location, loc_time, ip_address) VALUES (?, ?, ?, ?, ?, NOW(), ?)');
 		$stmt->execute(array($userId, $token, $name, $code, $location, $_SERVER['REMOTE_ADDR']));
 
