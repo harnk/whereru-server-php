@@ -348,6 +348,8 @@ class API
 		// $text = $this->getString('text', self::MAX_MESSAGE_LENGTH, true);
 		$room = $this->getString('secret_code', self::MAX_MESSAGE_LENGTH, true);
 		$location = $this->getString('location', self::MAX_MESSAGE_LENGTH, true);
+		$emptyRoomUserId = 'NewGroupNoUsers';
+		$noMessagesUserId = 'HasUsersNoMessages';
 
 		// First, we get the record for the sender of the message from the
 		// active_users table. That gives us the nickname, device token, and
@@ -373,6 +375,49 @@ class API
 
 			// We are done now
 			exit();
+		} else {
+			$stmt = $this->pdo->prepare('SELECT * FROM active_users WHERE secret_code = ? AND user_id <> ?');
+			$stmt->execute(array($room, $userId));
+			$user = $stmt->fetch(PDO::FETCH_OBJ);
+
+			// if ($user !== false) {
+			// 	$useMessages = $noMessagesUserId;
+			// } else {
+			// 	$useMessages = $emptyRoomUserId;
+			// }
+
+			if ($user !== false) {
+				//First update the askers location and time in active_users
+				$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
+				$stmt->execute(array($location, $userId));
+
+				// Find the messages for all in the room
+				// for this secret code. 
+				$stmt = $this->pdo->prepare("SELECT * FROM auto_messages WHERE user_id = ?");
+				$stmt->execute(array($noMessagesUserId));
+				$returnMessages = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+				echo json_encode($returnMessages);
+
+				// We are done now
+				exit();
+			} else {
+				//First update the askers location and time in active_users
+				$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
+				$stmt->execute(array($location, $userId));
+
+				// Find the messages for all in the room
+				// for this secret code. 
+				$stmt = $this->pdo->prepare("SELECT * FROM auto_messages WHERE user_id = ?");
+				$stmt->execute(array($emptyRoomUserId));
+				$returnMessages = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+				echo json_encode($returnMessages);
+
+				// We are done now
+				exit();
+			}
+
 		}
 	}
 
