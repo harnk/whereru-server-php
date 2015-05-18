@@ -304,13 +304,9 @@ class API
 
 		if ($user !== false)
 		{
-			//First update the askers location and time in active_users
-			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
+			//First update the askers location and time in active_users and set looking = true
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, looking = 1, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
 			$stmt->execute(array($location, $userId));
-
-			// Put the sender's name and the message text into the JSON payload
-			// for the push notification.
-			$payload = $this->makeFindPayload($userId, $text, $location);
 
 			// Find the locations for all other users who are registered
 			// for this secret code. We exclude the location of the sender
@@ -325,13 +321,6 @@ class API
 			// We are done now
 			exit();
 
-			// // // Send out a push notification to each of these devices.
-			// // foreach ($tokens as $token)
-			// // {
-			// // 	$this->addPushNotification($token, $payload);
-			// // 	//Maybe put a slight delay between each send so receiver has time to deal with them??
-			// // 	// sleep(1);
-			// // }
 		}
 	}
 
@@ -498,9 +487,24 @@ class API
 		if ($user !== false)
 		{
 						
-			// Finally update the responders location and current time in active_users
-			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
+			// Finally update the responders location and current time in active_users, also set no longer looking
+			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, looking = 0, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
 			$stmt->execute(array($location, $userId));
+
+						// Find the locations for all other users who are registered
+			// for this secret code. We exclude the location of the sender
+			// of the message, since he already knows. We also
+			// exclude users who have not submitted a valid device token yet.
+			$stmt = $this->pdo->prepare("SELECT looking, nickname, loc_time FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0'");
+			$stmt->execute(array($user->secret_code, $user->device_token));
+			$userlocs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+			echo json_encode($userlocs);
+
+			// We are done now
+			exit();
+
+
 
 		}
 	}
