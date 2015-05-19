@@ -344,7 +344,7 @@ class API
 		// active_users table. That gives us the nickname, device token, and
 		// secret code for that user.
 
-		$stmt = $this->pdo->prepare('SELECT * FROM messages WHERE secret_code = ? LIMIT 30');
+		$stmt = $this->pdo->prepare('SELECT * FROM messages WHERE secret_code = ? LIMIT 5');
 		$stmt->execute(array($room));
 		$messages = $stmt->fetch(PDO::FETCH_OBJ);
 
@@ -356,7 +356,10 @@ class API
 
 			// Find the messages for all in the room
 			// for this secret code. 
-			$stmt = $this->pdo->prepare("SELECT * FROM messages WHERE secret_code = ?");
+			// $stmt = $this->pdo->prepare("SELECT * FROM messages WHERE secret_code = ?");
+
+			// Only get the 50 most recent messages
+			$stmt = $this->pdo->prepare("SELECT * FROM (SELECT * FROM messages WHERE secret_code = ? ORDER BY message_id DESC LIMIT 50) sub ORDER BY message_id ASC");
 			$stmt->execute(array($messages->secret_code));
 			$returnMessages = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
