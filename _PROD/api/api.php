@@ -677,16 +677,18 @@ class API
 		return $token;	
 	}
 
-	// Checks whether the format of the device token is correct (64 hexadecimal
+	// Checks whether the format of the device token is correct (64 hexadecimal for iOS 152 for Android
 	// characters). Note: we have no means to verify whether the device token
 	// was really issued by APNS and corresponds to an actual device.
 	function isValidDeviceToken($deviceToken)
 	{
-		if (strlen($deviceToken) != 64)
+		if (strlen($deviceToken) != 64 && strlen($deviceToken) != 152)
 			return false;
 
-		if (preg_match("/^[0-9a-fA-F]{64}$/", $deviceToken) == 0)
-			return false;
+		if (strlen($deviceToken) == 64) {
+			if (preg_match("/^[0-9a-fA-F]{64}$/", $deviceToken) == 0)
+				return false;
+	}
 
 		return true;
 	}
