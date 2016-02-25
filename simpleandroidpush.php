@@ -1,7 +1,7 @@
 <?php
 // Payload data you want to send to Android device(s)
 // (it will be accessible via intent extras)    
-$data = array( 'message' => 'Hello You Great Stinkin Crazy World!' );
+$data = array( 'message' => 'this message doesnt matter if extra = whereru!', 'extra' => 'whereru', 'asker' => '8BF13A775C1844669F678DBB36F6D73D' );
 
 // The recipient registration tokens for this notification
 // http://developer.android.com/google/gcm/ 
