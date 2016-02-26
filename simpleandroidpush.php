@@ -1,7 +1,8 @@
 <?php
 // Payload data you want to send to Android device(s)
 // (it will be accessible via intent extras)    
-$data = array( 'message' => 'this message doesnt matter if extra = whereru!', 'extra' => 'whereru', 'asker' => '8BF13A775C1844669F678DBB36F6D73D' );
+// $data = array( 'message' => 'this message doesnt matter if extra = whereru!', 'extra' => 'whereru', 'asker' => '8BF13A775C1844669F678DBB36F6D73D', 'loc' => '40.737009, -114.043929' );
+$data = array( 'extra' => 'whereru', 'asker' => '8BF13A775C1844669F678DBB36F6D73D', 'loc' => '40.737009, -114.043929' );
 
 // The recipient registration tokens for this notification
 // http://developer.android.com/google/gcm/ 
@@ -49,6 +50,10 @@ function sendGoogleCloudMessage( $data, $ids )
 
     // Set JSON post data
     curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $post ) );
+
+    echo '==================' . "\r\n";
+    echo json_encode( $post ) . "\r\n";
+    echo '==================' . "\r\n";
 
     // Actually send the push   
     $result = curl_exec( $ch );
