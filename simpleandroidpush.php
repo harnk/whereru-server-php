@@ -7,7 +7,7 @@ $data = array( 'extra' => 'whereru', 'asker' => '8BF13A775C1844669F678DBB36F6D73
 // The recipient registration tokens for this notification
 // http://developer.android.com/google/gcm/ 
 // $ids = array( 'eYI2hhRxPnc:APA91bHZSDlbPNoQdy0_HKzogw8Yi5j5IYWcREFQRgDmywscckn2ruLp5hNhm1_s0xkM5kDZ_y6zzWl0uzkaorQ0ZdGmjA6O-gyPVwhIfafPeSsCO3XpDELgHPgBbVKTX-XmB9tWnVqD', 'def' );
-$ids = array( 'e4a_CgCVXa0:APA91bFSdqfdchWM8rYRKGhqF__1X_TSTzTISZEzfe2gNVOrdC46lRW_cHAaarNk4AsKUYfq8vgWHUJilE5jEmkyz8ukQ0MVfMcn9hwXbY8oZ8q9RvSqSnzgXFN28yOQ9NtB2nRN79in');
+$ids = array( 'eUvHaYUHq1M:APA91bElViVWfJvhOE3qs5g9TX83ViI8nCct00dx8-Q-QhJTgU1aZSsq4zotAiEW425LLubdYkgzN9lfxr6Eacrd96z2oAZVTlgSJXP4AcALPuW06m_ps9ohB2EMTDUPviIsVCBg_e5z');
 
 // Send a GCM push
 sendGoogleCloudMessage(  $data, $ids );
