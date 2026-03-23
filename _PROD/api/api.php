@@ -57,6 +57,7 @@ catch (Exception $e)
 	if (APPLICATION_ENV == 'development')
 		var_dump($e);
 	else
+		var_dump($e);
 		exitWithHttpError(500);
 }
 
@@ -91,7 +92,7 @@ function isValidUtf8String($string, $maxLength, $allowNewlines = false)
 	// Don't allow control characters, except possibly newlines	
 	for ($t = 0; $t < strlen($string); $t++)
 	{
-		$ord = ord($string{$t});
+		$ord = ord($string[$t]);
 
 		if ($allowNewlines && ($ord == 10 || $ord == 13))
 			continue;
@@ -155,6 +156,7 @@ class API
 		{
 			switch (trim($_POST['cmd']))
 			{
+				case 'test': $this->handleTest(); return;
 				case 'join': $this->handleJoin(); return;
 				case 'leave': $this->handleLeave(); return;
 				case 'update': $this->handleUpdate(); return;
@@ -187,6 +189,11 @@ class API
 	// - code:  The secret code that identifies the chat room. Must be a UTF-8
 	//          string of maximum 255 bytes.
 	//
+
+	function handleTest()
+	{
+		echo "TEST IS OK" . PHP_EOL;
+	}
 	function handleJoin()
 	{
 		$userId = $this->getUserId();
@@ -476,6 +483,7 @@ class API
 	//
 	function handleLiveUpdate()
 	{
+		echo "zbad command";
 		$userId = $this->getUserId();
 		$location = $this->getString('location', self::MAX_MESSAGE_LENGTH, true);
 
@@ -506,10 +514,8 @@ class API
 
 			// We are done now
 			exit();
-
-
-
 		}
+		
 	}
 
 	// The "leave" API command removes a user from a chat room. That user will
@@ -680,18 +686,18 @@ class API
 	// Checks whether the format of the device token is correct (64 hexadecimal for iOS 152 for Android
 	// characters). Note: we have no means to verify whether the device token
 	// was really issued by APNS and corresponds to an actual device.
-	function isValidDeviceToken($deviceToken)
-	{
-		if (strlen($deviceToken) != 64 && strlen($deviceToken) != 152)
-			return false;
+    function isValidDeviceToken($deviceToken)
+    {
+        if (strlen($deviceToken) != 64 && strlen($deviceToken) != 152)
+            return false;
 
-		if (strlen($deviceToken) == 64) {
-			if (preg_match("/^[0-9a-fA-F]{64}$/", $deviceToken) == 0)
-				return false;
-	}
+        if (strlen($deviceToken) == 64) {
+            if (preg_match("/^[0-9a-fA-F]{64}$/", $deviceToken) == 0)
+                return false;
+        }
 
-		return true;
-	}
+        return true;
+    }
 
 	// Looks in the POST data for a field with the given name. If the field
 	// is not a valid UTF-8 string, or it is too long, the script exits with

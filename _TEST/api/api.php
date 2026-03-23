@@ -628,17 +628,19 @@ class API
 	// Checks whether the format of the device token is correct (64 hexadecimal
 	// characters). Note: we have no means to verify whether the device token
 	// was really issued by APNS and corresponds to an actual device.
-	function isValidDeviceToken($deviceToken)
-	{
-		if (strlen($deviceToken) != 64)
-			return false;
+    function isValidDeviceToken($deviceToken)
+    {
+        if (strlen($deviceToken) != 64 && strlen($deviceToken) != 152)
+            return false;
 
-		if (preg_match("/^[0-9a-fA-F]{64}$/", $deviceToken) == 0)
-			return false;
+        if (strlen($deviceToken) == 64) {
+            if (preg_match("/^[0-9a-fA-F]{64}$/", $deviceToken) == 0)
+                return false;
+        }
 
-		return true;
-	}
-
+        return true;
+    }
+	
 	// Looks in the POST data for a field with the given name. If the field
 	// is not a valid UTF-8 string, or it is too long, the script exits with
 	// an error message.
