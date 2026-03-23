@@ -840,6 +840,7 @@ class API
 	function addMessage($userId, $nickName, $message, $location, $secret_code)
 	{
 		// add this message to the messages table
+		// message_id will auto-increment
 		if (strlen($message) <= 2048)
 		{
 			$stmt = $this->pdo->prepare('INSERT INTO messages (user_id, nickname, message, location, secret_code, time_posted) VALUES (?, ?, ?, ?, ?, UTC_TIMESTAMP())');
