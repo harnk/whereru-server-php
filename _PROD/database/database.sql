@@ -2,7 +2,7 @@
 -- the SQL statements in case you want to create the database by hand.
 
 -- To create the database:
-CREATE DATABASE pushchat DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+-- CREATE DATABASE pushchat DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 -- To create the user for the database:
 USE pushchat;

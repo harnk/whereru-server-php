@@ -18,13 +18,16 @@ try
 	// a good idea to keep an eye on them.
 	if (APPLICATION_ENV == 'development')
 	{
-		error_reporting(E_ALL|E_STRICT);
+		error_log("Running in development mode");
+		error_reporting(E_ALL);
 		ini_set('display_errors', 'on');
 	}
 	else
 	{
-		error_reporting(0);
-		ini_set('display_errors', 'off');
+		error_log("Running in production mode");
+		// ini_set('display_errors', 'off');
+		error_reporting(E_ALL);
+		ini_set('display_errors', 'on');
 	}
 
 	// Load the config file. I prefer to keep all configuration settings in a
@@ -154,6 +157,7 @@ class API
 		// message.
 		if (isset($_POST['cmd']))
 		{
+			error_log("GOT CMD: " . $_POST['cmd']);
 			switch (trim($_POST['cmd']))
 			{
 				case 'test': $this->handleTest(); return;
@@ -196,11 +200,17 @@ class API
 	}
 	function handleJoin()
 	{
+		error_log("Handling join command");
 		$userId = $this->getUserId();
+		error_log("Got userId: " . $userId);
 		$token = $this->getDeviceToken(true);
+		error_log("Got token: " . $token);
 		$name = $this->getString('name', 255);
+		error_log("Got name: " . $name);
 		$code = $this->getString('code', 255);
+		error_log("Got code: " . $code);
 		$location = $this->getString('location', self::MAX_MESSAGE_LENGTH, true);
+		error_log("Got location: " . $location);
 
 		// When the client sends a "join" command, we add a new record to the
 		// active_users table. We identify the client by the user_id that it
@@ -222,7 +232,7 @@ class API
 
 		$stmt = $this->pdo->prepare('INSERT INTO active_users (user_Id, device_token, nickname, secret_code, location, loc_time, ip_address) VALUES (?, ?, ?, ?, ?, NOW(), ?)');
 		$stmt->execute(array($userId, $token, $name, $code, $location, $_SERVER['REMOTE_ADDR']));
-
+				
 		$this->pdo->commit();
 	}
 
@@ -483,7 +493,6 @@ class API
 	//
 	function handleLiveUpdate()
 	{
-		echo "zbad command";
 		$userId = $this->getUserId();
 		$location = $this->getString('location', self::MAX_MESSAGE_LENGTH, true);
 
@@ -591,6 +600,8 @@ class API
 
 		if ($user !== false)
 		{
+			error_log("Sender device_token from active_users: " . $user->device_token);
+
 			// Put the sender's name and the message text into the JSON payload
 			// for the push notification.
 			$payload = $this->makePayload($user->nickname, $text, $location);
@@ -606,6 +617,7 @@ class API
 			// Send out a push notification to each of these devices.
 			foreach ($tokens as $token)
 			{
+                error_log("Processing token in loop: " . $token);
 				$this->addPushNotification($token, $payload);
 			}
 
@@ -664,6 +676,7 @@ class API
 	// appear to be valid, the script exits with an error message.
 	function getDeviceToken($mayBeEmpty = false)
 	{
+		error_log("Getting device token");
 		if (!isset($_POST['token']))
 			exitWithHttpError(400, 'Missing device token');
 
@@ -680,6 +693,7 @@ class API
 		if (!$this->isValidDeviceToken($token))
 			exitWithHttpError(400, 'Invalid device token');
 
+		error_log("Returning device token: " . $token);
 		return $token;	
 	}
 
@@ -831,6 +845,7 @@ class API
 		// Payloads have a maximum size of 256 bytes. If the payload is too
 		// large (which shouldn't happen), we won't send this notification.
 		// iOS8 has increased payload size to 2KB
+		error_log("SCXTT addPushNotification deviceToken: " . $deviceToken );
 		if (strlen($payload) <= 256)
 		{
 			$stmt = $this->pdo->prepare('INSERT INTO push_queue (device_token, payload, time_queued) VALUES (?, ?, NOW())');
