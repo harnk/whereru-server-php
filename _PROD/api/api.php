@@ -809,20 +809,7 @@ class API
 		$locJson = $this->jsonEncode($location);
 		$locJson = truncateUtf8($locJson, self::MAX_MESSAGE_LENGTH);
 
-		// Combine everything into a JSON string
-		//
-		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","loc":"' . $locJson . '","sound":"beep.caf"}}';
-
-		// $payload = '{"aps":{"content-available":1,"loc":"' . $locJson . '","sound":"beep.caf"}}';
-
-
-		//Take extra, asker and loc OUT of aps
-		// SCXTT - took the click sound out for prod release - add this next line back in for texting apns
-		// $payload = '{"aps":{"content-available":1,"sound":"sweetbeep.caf"},"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '"}';
-		$payload = '{"aps":{"content-available":1},"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '"}';
-
-
-		// $payload = '{"aps":{"alert":"' . $nameJson . ': ' . $textJson . '","sound":"beep.caf"}}';
+		$payload = '{"aps":{"content-available": 1, "alert":" "},"extra":"whereru","asker":"' . $nameJson . '","loc":"' . $locJson . '"}';
 		return $payload;
 	}
 
