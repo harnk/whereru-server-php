@@ -604,6 +604,7 @@ class API
 		$blockedUsers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 		echo json_encode($blockedUsers);
+		exit();
 	}
 
 	// The "update" API command gives a user a new device token.
