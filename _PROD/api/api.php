@@ -173,6 +173,7 @@ class API
 				case 'getroommessages': $this->handleGetRoomMessages(); return;
 				case 'block': $this->handleBlock(); return;
 				case 'unblock': $this->handleUnblock(); return;
+				case 'getblocked': $this->handleGetBlocked(); return;
 			}
 		}
 
@@ -586,6 +587,23 @@ class API
 
 		$stmt = $this->pdo->prepare('DELETE FROM blocked_users WHERE blocker_user_id = ? AND blocked_user_id = ?');
 		$stmt->execute(array($userId, $blockedUserId));
+	}
+
+	// The "getblocked" API command retrieves the list of users that the current user has blocked.
+	//
+	// This command takes the following POST parameters:
+	//
+	// - user_id:  A unique identifier. Must be a string of 40 hexadecimal characters.
+	//
+	function handleGetBlocked()
+	{
+		$userId = $this->getUserId();
+
+		$stmt = $this->pdo->prepare('SELECT blocked_user_id FROM blocked_users WHERE blocker_user_id = ?');
+		$stmt->execute(array($userId));
+		$blockedUsers = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+		echo json_encode($blockedUsers);
 	}
 
 	// The "update" API command gives a user a new device token.
