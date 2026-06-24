@@ -167,10 +167,12 @@ class API
 				//Scxtt next line needs to update location in active_users
 				case 'message': $this->handleMessage(); return;
 				case 'find': $this->handleFind(); return;
-				case 'imhere': $this->handleImhere(); return;				
-				case 'liveupdate': $this->handleLiveUpdate(); return;				
-				case 'getroom': $this->handleFindLast(); return;		
-				case 'getroommessages': $this->handleGetRoomMessages(); return;		
+				case 'imhere': $this->handleImhere(); return;
+				case 'liveupdate': $this->handleLiveUpdate(); return;
+				case 'getroom': $this->handleFindLast(); return;
+				case 'getroommessages': $this->handleGetRoomMessages(); return;
+				case 'block': $this->handleBlock(); return;
+				case 'unblock': $this->handleUnblock(); return;
 			}
 		}
 
@@ -274,8 +276,9 @@ class API
 			// for this secret code. We exclude the device token of the sender
 			// of the message, so he will not get a push notification. We also
 			// exclude users who have not submitted a valid device token yet.
-			$stmt = $this->pdo->prepare("SELECT device_token FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0'");
-			$stmt->execute(array($user->secret_code, $user->device_token));
+			// Also exclude users who have blocked the requesting user.
+			$stmt = $this->pdo->prepare("SELECT device_token FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0' AND user_id NOT IN (SELECT blocked_user_id FROM blocked_users WHERE blocker_user_id = ?)");
+			$stmt->execute(array($user->secret_code, $user->device_token, $userId));
 			$tokens = $stmt->fetchAll(PDO::FETCH_COLUMN);
 
 			// Send out a push notification to each of these devices.
@@ -286,8 +289,8 @@ class API
 				// sleep(1);
 			}
 
-			$stmt = $this->pdo->prepare("SELECT location, nickname, loc_time FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0'");
-			$stmt->execute(array($user->secret_code, $user->device_token));
+			$stmt = $this->pdo->prepare("SELECT user_id, location, nickname, loc_time FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0' AND user_id NOT IN (SELECT blocked_user_id FROM blocked_users WHERE blocker_user_id = ?)");
+			$stmt->execute(array($user->secret_code, $user->device_token, $userId));
 			$userlocs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 			echo json_encode($userlocs);
@@ -329,8 +332,9 @@ class API
 			// for this secret code. We exclude the location of the sender
 			// of the message, since he already knows. We also
 			// exclude users who have not submitted a valid device token yet.
-			$stmt = $this->pdo->prepare("SELECT location, nickname, loc_time FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0'");
-			$stmt->execute(array($user->secret_code, $user->device_token));
+			// Also exclude users who have blocked the requesting user.
+			$stmt = $this->pdo->prepare("SELECT user_id, location, nickname, loc_time FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0' AND user_id NOT IN (SELECT blocked_user_id FROM blocked_users WHERE blocker_user_id = ?)");
+			$stmt->execute(array($user->secret_code, $user->device_token, $userId));
 			$userlocs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 			echo json_encode($userlocs);
@@ -455,7 +459,18 @@ class API
 
 		if ($user !== false)
 		{
-						
+			// Check if the asker has blocked the responder
+			$stmt = $this->pdo->prepare('SELECT * FROM blocked_users WHERE blocker_user_id = ? AND blocked_user_id = ? LIMIT 1');
+			$stmt->execute(array($askerId, $userId));
+			$blocked = $stmt->fetch(PDO::FETCH_OBJ);
+
+			// If the asker has blocked the responder, don't send the location
+			if ($blocked !== false)
+			{
+				error_log("Asker has blocked responder, not sending location");
+				exit();
+			}
+
 			// Put the sender's name and the message text into the JSON payload
 			// for the push notification.
 
@@ -474,7 +489,7 @@ class API
 			foreach ($tokens as $token)
 			{
 				$this->addPushNotification($token, $payload);
-			}	
+			}
 
 			// Finally update the responders location and current time in active_users
 			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
@@ -506,17 +521,17 @@ class API
 
 		if ($user !== false)
 		{
-						
 			// Finally update the responders location and current time in active_users, also set no longer looking
 			$stmt = $this->pdo->prepare('UPDATE active_users SET location = ?, looking = 0, loc_time = UTC_TIMESTAMP() WHERE user_Id = ?');
 			$stmt->execute(array($location, $userId));
 
-						// Find the locations for all other users who are registered
+			// Find the locations for all other users who are registered
 			// for this secret code. We exclude the location of the sender
 			// of the message, since he already knows. We also
 			// exclude users who have not submitted a valid device token yet.
-			$stmt = $this->pdo->prepare("SELECT looking, nickname, loc_time FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0'");
-			$stmt->execute(array($user->secret_code, $user->device_token));
+			// Also exclude users who have blocked the requesting user.
+			$stmt = $this->pdo->prepare("SELECT looking, nickname, loc_time FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0' AND user_id NOT IN (SELECT blocked_user_id FROM blocked_users WHERE blocker_user_id = ?)");
+			$stmt->execute(array($user->secret_code, $user->device_token, $userId));
 			$userlocs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 			echo json_encode($userlocs);
@@ -539,6 +554,38 @@ class API
 		$userId = $this->getUserId();
 		$stmt = $this->pdo->prepare('DELETE FROM active_users WHERE user_Id = ?');
 		$stmt->execute(array($userId));
+	}
+
+	// The "block" API command blocks a user from seeing the blocker's location
+	//
+	// This command takes the following POST parameters:
+	//
+	// - user_id:  A unique identifier. Must be a string of 40 hexadecimal characters.
+	// - blocked_user_id: The user_id of the user to block. Must be a string of 40 hexadecimal characters.
+	//
+	function handleBlock()
+	{
+		$userId = $this->getUserId();
+		$blockedUserId = $this->getUserIdFromParam('blocked_user_id');
+
+		$stmt = $this->pdo->prepare('INSERT INTO blocked_users (blocker_user_id, blocked_user_id, created_at) VALUES (?, ?, NOW())');
+		$stmt->execute(array($userId, $blockedUserId));
+	}
+
+	// The "unblock" API command unblocks a user
+	//
+	// This command takes the following POST parameters:
+	//
+	// - user_id:  A unique identifier. Must be a string of 40 hexadecimal characters.
+	// - blocked_user_id: The user_id of the user to unblock. Must be a string of 40 hexadecimal characters.
+	//
+	function handleUnblock()
+	{
+		$userId = $this->getUserId();
+		$blockedUserId = $this->getUserIdFromParam('blocked_user_id');
+
+		$stmt = $this->pdo->prepare('DELETE FROM blocked_users WHERE blocker_user_id = ? AND blocked_user_id = ?');
+		$stmt->execute(array($userId, $blockedUserId));
 	}
 
 	// The "update" API command gives a user a new device token.
@@ -610,8 +657,9 @@ class API
 			// for this secret code. We exclude the device token of the sender
 			// of the message, so he will not get a push notification. We also
 			// exclude users who have not submitted a valid device token yet.
-			$stmt = $this->pdo->prepare("SELECT device_token FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0'");
-			$stmt->execute(array($user->secret_code, $user->device_token));
+			// Also exclude users who have blocked the sender.
+			$stmt = $this->pdo->prepare("SELECT device_token FROM active_users WHERE secret_code = ? AND device_token <> ? AND device_token <> '0' AND user_id NOT IN (SELECT blocked_user_id FROM blocked_users WHERE blocker_user_id = ?)");
+			$stmt->execute(array($user->secret_code, $user->device_token, $userId));
 			$tokens = $stmt->fetchAll(PDO::FETCH_COLUMN);
 
 			// Send out a push notification to each of these devices.
@@ -655,6 +703,20 @@ class API
 		$userId = trim(urldecode($_POST['asker']));
 		if (!$this->isValidUserId($userId))
 			exitWithHttpError(400, 'Invalid asker');
+
+		return $userId;
+	}
+
+	// Retrieves a user identifier from a specific POST parameter. If the user_id does not
+	// appear to be valid, the script exits with an error message.
+	function getUserIdFromParam($paramName)
+	{
+		if (!isset($_POST[$paramName]))
+			exitWithHttpError(400, 'Missing ' . $paramName);
+
+		$userId = trim(urldecode($_POST[$paramName]));
+		if (!$this->isValidUserId($userId))
+			exitWithHttpError(400, 'Invalid ' . $paramName);
 
 		return $userId;
 	}
