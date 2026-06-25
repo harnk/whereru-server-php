@@ -563,14 +563,16 @@ class API
 	//
 	// - user_id:  A unique identifier. Must be a string of 40 hexadecimal characters.
 	// - blocked_user_id: The user_id of the user to block. Must be a string of 40 hexadecimal characters.
+	// - blocked_nickname: The nickname of the user to block.
 	//
 	function handleBlock()
 	{
 		$userId = $this->getUserId();
 		$blockedUserId = $this->getUserIdFromParam('blocked_user_id');
+		$blockedNickname = isset($_POST['blocked_nickname']) ? $_POST['blocked_nickname'] : '';
 
-		$stmt = $this->pdo->prepare('INSERT INTO blocked_users (blocker_user_id, blocked_user_id, created_at) VALUES (?, ?, NOW())');
-		$stmt->execute(array($userId, $blockedUserId));
+		$stmt = $this->pdo->prepare('INSERT INTO blocked_users (blocker_user_id, blocked_user_id, blocked_nickname, created_at) VALUES (?, ?, ?, NOW())');
+		$stmt->execute(array($userId, $blockedUserId, $blockedNickname));
 	}
 
 	// The "unblock" API command unblocks a user
@@ -599,7 +601,7 @@ class API
 	{
 		$userId = $this->getUserId();
 
-		$stmt = $this->pdo->prepare('SELECT blocked_user_id FROM blocked_users WHERE blocker_user_id = ?');
+		$stmt = $this->pdo->prepare('SELECT blocked_user_id, blocked_nickname FROM blocked_users WHERE blocker_user_id = ?');
 		$stmt->execute(array($userId));
 		$blockedUsers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
