@@ -25,9 +25,8 @@ try
 	else
 	{
 		error_log("Running in production mode");
-		// ini_set('display_errors', 'off');
 		error_reporting(E_ALL);
-		ini_set('display_errors', 'on');
+		ini_set('display_errors', 'off');
 	}
 
 	// Load the config file. I prefer to keep all configuration settings in a
@@ -54,14 +53,20 @@ catch (Exception $e)
 {
 	// The code throws an exception when something goes horribly wrong; e.g.
 	// no connection to the database could be made. In development mode, we
-	// show these exception messages. In production mode, we simply return a
-	// "500 Server Error" message.
+	// show these exception messages. In production mode, we log them server-side
+	// and return a generic "500 Server Error" response.
 
 	if (APPLICATION_ENV == 'development')
+	{
 		var_dump($e);
+	}
 	else
-		var_dump($e);
-		exitWithHttpError(500);
+	{
+		error_log("Unhandled exception: " . $e->getMessage());
+		error_log($e->getTraceAsString());
+	}
+
+	exitWithHttpError(500);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
